@@ -1,0 +1,94 @@
+{
+  "serviceNumber": "152",
+  "sourceServiceId": "svc-214",
+  "rank": 152,
+  "name": "쇼핑몰 콘텐츠 공장 서비스",
+  "category": "content",
+  "niche": "쇼핑몰",
+  "score": 85,
+  "tier": "B",
+  "channel": "web-marketplace",
+  "platform": {
+    "primary": "Gumroad",
+    "setupNote": "사용자 소유 판매자 계정에서 상품/링크를 생성해야 합니다."
+  },
+  "payment": {
+    "primary": "Gumroad",
+    "linkPlaceholder": "PAYMENT_LINK_HERE",
+    "ownerRequired": true,
+    "forms": [
+      {
+        "channel": "marketplace",
+        "name": "Gumroad",
+        "accountRequired": true,
+        "whenToUse": "초저가 ZIP, 문서, 템플릿",
+        "caveat": "수수료/정산 조건 확인."
+      },
+      {
+        "channel": "marketplace",
+        "name": "Payhip",
+        "accountRequired": true,
+        "whenToUse": "디지털 다운로드 스토어",
+        "caveat": "게이트웨이 연결 필요."
+      },
+      {
+        "channel": "marketplace",
+        "name": "Ko-fi Shop",
+        "accountRequired": true,
+        "whenToUse": "후원형 디지털 상품과 커미션",
+        "caveat": "PayPal/Stripe 연결 국가 확인."
+      },
+      {
+        "channel": "marketplace",
+        "name": "크몽 결제",
+        "accountRequired": true,
+        "whenToUse": "한국어 설치 대행/서비스 패키지",
+        "caveat": "플랫폼 정책과 수수료 확인."
+      }
+    ]
+  },
+  "priceAnchor": "₩250,000 package + ₩400,000/mo",
+  "customer": "쇼핑몰 운영자와 담당자",
+  "problem": "반복 CS 답변을 매번 새로 작성한다",
+  "offer": "Ghost 또는 로컬 도구를 활용해 쇼핑몰의 콘텐츠 공장 흐름을 세팅하고 운영 문서까지 납품한다.",
+  "openSource": "Ghost",
+  "mvpDays": 5,
+  "firstAction": "쇼핑몰의 현재 업무 화면 1개와 샘플 데이터 10개를 받아 첫 MVP 범위를 고정한다.",
+  "sourceRisk": "오픈소스 라이선스, 고객 계정 권한, 개인정보/결제 책임은 계약 전 확인해야 한다.",
+  "toolStack": "Notion, Google Docs, CMS 또는 고객 게시 채널",
+  "weakness": "업종 규제와 과장 표현 검수가 없으면 게시 후 리스크가 생긴다.",
+  "requiredAddition": "금지 표현 목록, 업종별 검수표, 게시 전 승인 플로우를 추가한다.",
+  "deliverables": [
+    "콘텐츠 캘린더",
+    "업종별 검수표",
+    "금지 표현 목록",
+    "게시 전 승인 플로우",
+    "샘플 게시글 3종",
+    "성과 점검표"
+  ],
+  "implementationSteps": [
+    "게시 채널, 타깃 고객, 금지 표현, 승인자를 확정한다.",
+    "업종별 검수표와 콘텐츠 구조를 먼저 만든다.",
+    "샘플 게시글을 작성하고 고객 승인 흐름을 테스트한다.",
+    "게시 후 수정, 보관, 재사용 규칙을 인수인계한다."
+  ],
+  "channelGuidance": [
+    {
+      "channel": "marketplace",
+      "bestFor": "초기 수요 검증, 한국어 대행, 디지털 템플릿",
+      "payment": "Gumroad, Ko-fi, Payhip, 크몽, 숨고, 네이버 스마트스토어",
+      "buildPath": "상품 페이지 → 샘플 이미지 → 고정가 패키지 → 후기 수집 → 자체 웹 전환",
+      "caveat": "플랫폼 수수료, 금지 서비스, 정산 주기, 환불 정책을 확인한다."
+    }
+  ],
+  "qaChecklist": [
+    "랜딩 페이지에 PAYMENT_LINK_HERE 자리표시자가 남아 있어 사용자 소유 결제 링크로 교체 가능하다.",
+    "실제 결제는 사용자 소유 계정에서만 받는다는 문구가 모든 문서에 있다.",
+    "확정 수익 또는 확정 매출 표현이 없다.",
+    "환불/주의/성과 비보장 안내가 포함되어 있다.",
+    "필수 보강 항목이 랜딩, 오퍼, 체크리스트, 아웃리치에 반영되어 있다.",
+    "납품물이 최소 6개 이상이고 고객 권한 확인 항목이 있다."
+  ],
+  "caveat": "실제 결제는 사용자 소유 계정에서만 진행하며 수익을 보장하지 않습니다.",
+  "generatedAt": "2026-06-02"
+}

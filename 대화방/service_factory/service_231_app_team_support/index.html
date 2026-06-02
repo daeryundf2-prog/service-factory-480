@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>앱 개발팀 고객상담 서비스</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, "Malgun Gothic", sans-serif; background: #f5f7f4; color: #182027; }
+    body { margin: 0; }
+    main { max-width: 1080px; margin: 0 auto; padding: 40px 20px 56px; }
+    .hero { display: grid; gap: 20px; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); align-items: stretch; }
+    section, aside { background: #fff; border: 1px solid #d9ded6; border-radius: 8px; padding: 24px; box-shadow: 0 8px 24px rgba(24,32,39,.06); }
+    h1 { font-size: 34px; line-height: 1.18; margin: 0 0 14px; letter-spacing: 0; }
+    h2 { font-size: 19px; margin: 0 0 12px; letter-spacing: 0; }
+    p { line-height: 1.65; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .meta span { border: 1px solid #cbd4c5; border-radius: 999px; padding: 7px 10px; font-size: 13px; background: #f8faf6; }
+    .price { font-size: 24px; font-weight: 700; margin: 10px 0 16px; }
+    a.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 6px; background: #1f6f5b; color: white; text-decoration: none; font-weight: 700; }
+    ul, ol { padding-left: 22px; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+    .note { border-left: 4px solid #b85b38; background: #fff6ef; padding: 14px 16px; border-radius: 6px; }
+    @media (max-width: 780px) { .hero, .grid { grid-template-columns: 1fr; } h1 { font-size: 28px; } main { padding-top: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <section>
+        <p>Service 231 · support · Rank 231</p>
+        <h1>앱 개발팀 고객상담 서비스</h1>
+        <p>Chatwoot 또는 로컬 도구를 활용해 앱 개발팀의 고객상담 흐름을 세팅하고 운영 문서까지 납품한다.</p>
+        <div class="meta">
+          <span>서비스 ID: svc-363</span>
+          <span>등급/점수: B / 83</span>
+          <span>채널: android-apple-companion</span>
+          <span>플랫폼: Ko-fi</span>
+          <span>결제: Ko-fi Payments</span>
+        </div>
+        <p class="price">₩700,000 setup + ₩200,000/mo</p>
+        <a class="button" href="PAYMENT_LINK_HERE">결제 링크 연결</a>
+        <p class="note">실제 결제는 사용자 소유 계정에서 생성한 링크로만 받습니다. 이 페이지는 출시 준비용 템플릿이며 수익이나 매출을 보장하지 않습니다.</p>
+      </section>
+      <aside>
+        <h2>필수 보강</h2>
+        <p>개인정보 처리 위탁 문구, 라벨 규칙, SLA 응답표를 추가한다.</p>
+        <h2>주의할 약점</h2>
+        <p>메신저 API와 개인정보 처리 위탁 문구가 빠지면 운영 리스크가 크다.</p>
+        <h2>첫 실행</h2>
+        <p>앱 개발팀의 현재 업무 화면 1개와 샘플 데이터 10개를 받아 첫 MVP 범위를 고정한다.</p>
+      </aside>
+    </div>
+    <div class="grid">
+      <section><h2>납품물</h2><ul><li>문의 분류표</li>
+<li>응답 템플릿</li>
+<li>SLA 기준표</li>
+<li>에스컬레이션 규칙</li>
+<li>FAQ 초안</li>
+<li>운영 인수인계 체크리스트</li></ul></section>
+      <section><h2>작업 흐름</h2><ol><li>문의 유형, 긴급도, 담당자, 응답 시간을 정의한다.</li>
+<li>FAQ와 응답 템플릿을 만들고 실제 문의 예시로 검수한다.</li>
+<li>에스컬레이션과 고객 알림 기준을 세팅한다.</li>
+<li>문의 보관, 수정, 재사용 규칙을 인수인계한다.</li></ol></section>
+      <section><h2>결제 주의</h2><ul><li><strong>Google Play Billing</strong>: Android 앱 안 디지털 기능/구독 / Google Play 배포 앱의 인앱 디지털 결제 정책을 따른다.</li>
+<li><strong>External web payment for outside-app services</strong>: 앱 밖에서 소비되는 실물/외부 서비스 / 앱 안에서 외부 결제로 유도 가능한지 정책 확인 필요.</li>
+<li><strong>Apple In-App Purchase</strong>: iOS 앱 안 디지털 콘텐츠/기능/구독 / App Store Review Guidelines와 StoreKit 상태를 따라야 한다.</li>
+<li><strong>Apple Pay for real-world services</strong>: 현장 서비스, 예약, 물리 서비스 / 디지털 기능 판매에는 IAP가 필요할 수 있다.</li></ul></section>
+      <section><h2>채널 주의</h2><ul><li><strong>android</strong>: 웹 서비스 먼저 검증 → Android companion app → Play Console 정책 확인 → Billing 또는 외부 결제 분리 / Google Play 배포 앱의 인앱 디지털 기능/콘텐츠 결제는 Google Play Billing 정책을 우선 검토한다.</li>
+<li><strong>apple</strong>: 웹 결제 검증 → iOS companion app → App Store Review Guidelines 3.1 검토 → StoreKit/IAP 설계 / iOS 앱 안에서 소비되는 디지털 콘텐츠/기능/구독은 Apple In-App Purchase가 필요할 수 있다.</li></ul></section>
+    </div>
+  </main>
+</body>
+</html>

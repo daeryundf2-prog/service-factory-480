@@ -1,0 +1,65 @@
+{
+  "serviceNumber": "144",
+  "sourceServiceId": "svc-408",
+  "rank": 144,
+  "name": "보험 설계사 커머스 백오피스 서비스",
+  "category": "commerce",
+  "niche": "보험 설계사",
+  "score": 85,
+  "tier": "B",
+  "channel": "internet-service",
+  "platform": {
+    "primary": "Paddle",
+    "setupNote": "사용자 소유 판매자 계정에서 상품/링크를 생성해야 합니다."
+  },
+  "payment": {
+    "primary": "Paddle",
+    "linkPlaceholder": "PAYMENT_LINK_HERE",
+    "ownerRequired": true,
+    "forms": []
+  },
+  "priceAnchor": "₩1,500,000 setup + ₩500,000/mo",
+  "customer": "보험 설계사 운영자와 담당자",
+  "problem": "콘텐츠 업로드 소재가 꾸준히 나오지 않는다",
+  "offer": "Medusa 또는 로컬 도구를 활용해 보험 설계사의 커머스 백오피스 흐름을 세팅하고 운영 문서까지 납품한다.",
+  "openSource": "Medusa",
+  "mvpDays": 3,
+  "firstAction": "보험 설계사의 현재 업무 화면 1개와 샘플 데이터 10개를 받아 첫 MVP 범위를 고정한다.",
+  "sourceRisk": "오픈소스 라이선스, 고객 계정 권한, 개인정보/결제 책임은 계약 전 확인해야 한다.",
+  "toolStack": "WooCommerce, Shopify, 스마트스토어 또는 고객 판매 채널",
+  "weakness": "결제, 배송, 환불, 세금 범위를 분리하지 않으면 스코프가 폭발한다.",
+  "requiredAddition": "결제/배송/환불/세금 범위를 별도 옵션으로 분리한다.",
+  "deliverables": [
+    "상품 등록표",
+    "주문 상태 정의서",
+    "재고/옵션 점검표",
+    "배송/환불 안내문",
+    "결제 링크 연결표",
+    "운영 인수인계 체크리스트"
+  ],
+  "implementationSteps": [
+    "상품, 옵션, 가격, 배송/환불 조건을 먼저 고정한다.",
+    "주문 상태와 고객 알림 메시지를 정리한다.",
+    "결제 링크와 상품 페이지의 연결 상태를 확인한다.",
+    "품절, 옵션 변경, 환불 요청 대응 절차를 문서화한다."
+  ],
+  "channelGuidance": [
+    {
+      "channel": "internet-service",
+      "bestFor": "SaaS, API, 자동화, 웹 대시보드, 월 구독",
+      "payment": "Stripe Subscription, Paddle Subscription, Lemon Squeezy Subscription",
+      "buildPath": "로그인 없는 MVP → 고객별 워크스페이스 → 구독/인보이스 → 운영 모니터링",
+      "caveat": "개인정보, 데이터 보관, 장애 대응 SLA를 계약에 포함한다."
+    }
+  ],
+  "qaChecklist": [
+    "랜딩 페이지에 PAYMENT_LINK_HERE 자리표시자가 남아 있어 사용자 소유 결제 링크로 교체 가능하다.",
+    "실제 결제는 사용자 소유 계정에서만 받는다는 문구가 모든 문서에 있다.",
+    "확정 수익 또는 확정 매출 표현이 없다.",
+    "환불/주의/성과 비보장 안내가 포함되어 있다.",
+    "필수 보강 항목이 랜딩, 오퍼, 체크리스트, 아웃리치에 반영되어 있다.",
+    "납품물이 최소 6개 이상이고 고객 권한 확인 항목이 있다."
+  ],
+  "caveat": "실제 결제는 사용자 소유 계정에서만 진행하며 수익을 보장하지 않습니다.",
+  "generatedAt": "2026-06-02"
+}

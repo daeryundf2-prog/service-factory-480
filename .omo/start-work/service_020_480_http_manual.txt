@@ -1,0 +1,6 @@
+manual-http-check 2026-06-02T09:23:21.140Z
+PASS /service_factory/service_020_real_estate_internal_tools/index.html status=200 bytes=3679 ownerAccount=true noGuarantee=true noReplacementChar=true
+PASS /service_factory/service_480_coach_content/index.html status=200 bytes=3611 ownerAccount=true noGuarantee=true noReplacementChar=true
+PASS /service_factory/service_020_480_index.html status=200 bytes=95301 ownerAccount=true noGuarantee=true noReplacementChar=true
+PASS /service_factory/service_001_480_launch_index.html status=200 bytes=99248 ownerAccount=true noGuarantee=true noReplacementChar=true
+cleanup node_http_server_closed=True

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>노무사 문의 자동화 서비스</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, "Malgun Gothic", sans-serif; background: #f5f7f4; color: #182027; }
+    body { margin: 0; }
+    main { max-width: 1080px; margin: 0 auto; padding: 40px 20px 56px; }
+    .hero { display: grid; gap: 20px; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); align-items: stretch; }
+    section, aside { background: #fff; border: 1px solid #d9ded6; border-radius: 8px; padding: 24px; box-shadow: 0 8px 24px rgba(24,32,39,.06); }
+    h1 { font-size: 34px; line-height: 1.18; margin: 0 0 14px; letter-spacing: 0; }
+    h2 { font-size: 19px; margin: 0 0 12px; letter-spacing: 0; }
+    p { line-height: 1.65; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .meta span { border: 1px solid #cbd4c5; border-radius: 999px; padding: 7px 10px; font-size: 13px; background: #f8faf6; }
+    .price { font-size: 24px; font-weight: 700; margin: 10px 0 16px; }
+    a.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 6px; background: #1f6f5b; color: white; text-decoration: none; font-weight: 700; }
+    ul, ol { padding-left: 22px; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+    .note { border-left: 4px solid #b85b38; background: #fff6ef; padding: 14px 16px; border-radius: 6px; }
+    @media (max-width: 780px) { .hero, .grid { grid-template-columns: 1fr; } h1 { font-size: 28px; } main { padding-top: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <section>
+        <p>Service 214 · automation · Rank 214</p>
+        <h1>노무사 문의 자동화 서비스</h1>
+        <p>Activepieces 또는 로컬 도구를 활용해 노무사의 문의 자동화 흐름을 세팅하고 운영 문서까지 납품한다.</p>
+        <div class="meta">
+          <span>서비스 ID: svc-121</span>
+          <span>등급/점수: B / 83</span>
+          <span>채널: web-service</span>
+          <span>플랫폼: Gumroad</span>
+          <span>결제: Stripe Payment Links</span>
+        </div>
+        <p class="price">₩300,000 setup + ₩90,000/mo</p>
+        <a class="button" href="PAYMENT_LINK_HERE">결제 링크 연결</a>
+        <p class="note">실제 결제는 사용자 소유 계정에서 생성한 링크로만 받습니다. 이 페이지는 출시 준비용 템플릿이며 수익이나 매출을 보장하지 않습니다.</p>
+      </section>
+      <aside>
+        <h2>필수 보강</h2>
+        <p>실패 알림, 재시도 규칙, 고객 계정 권한 체크리스트를 추가한다.</p>
+        <h2>주의할 약점</h2>
+        <p>고객 계정/API 권한과 실패 알림 설계가 부족하면 납품 후 유지보수 부담이 커진다.</p>
+        <h2>첫 실행</h2>
+        <p>노무사의 현재 업무 화면 1개와 샘플 데이터 10개를 받아 첫 MVP 범위를 고정한다.</p>
+      </aside>
+    </div>
+    <div class="grid">
+      <section><h2>납품물</h2><ul><li>자동화 흐름도</li>
+<li>실패 알림 설계</li>
+<li>재시도 규칙</li>
+<li>고객 계정/API 권한 체크리스트</li>
+<li>샘플 실행 로그</li>
+<li>유지보수 점검표</li></ul></section>
+      <section><h2>작업 흐름</h2><ol><li>현재 문의/업무 채널과 담당자 흐름을 정리한다.</li>
+<li>자동화 트리거, 조건, 예외 처리, 알림 채널을 설계한다.</li>
+<li>샘플 데이터로 성공/실패/중복 상황을 테스트한다.</li>
+<li>운영자가 직접 중단, 재실행, 변경 요청을 할 수 있게 문서화한다.</li></ol></section>
+      <section><h2>결제 주의</h2><ul><li><strong>Stripe Payment Links</strong>: 서비스 착수금, 월 유지보수, 단일 결제 링크 / 디지털 앱 기능을 모바일 앱 안에서 팔 때는 앱스토어 정책을 따로 본다.</li>
+<li><strong>Stripe Checkout</strong>: 자체 웹서비스의 장바구니/구독 / 개발 연동과 웹훅 검증이 필요하다.</li>
+<li><strong>Paddle Checkout</strong>: 글로벌 디지털 상품/소프트웨어 / 판매자 승인과 상품 심사가 필요하다.</li>
+<li><strong>Lemon Squeezy Checkout</strong>: 라이선스/다운로드/구독 / 계정 승인과 지원 국가 확인 필요.</li></ul></section>
+      <section><h2>채널 주의</h2><ul><li><strong>web</strong>: 정적 카탈로그 → 결제 링크 → 납품 ZIP/온보딩 폼 → 월 유지보수 / 실제 결제 링크는 사용자 소유 계정에서 생성한다.</li></ul></section>
+    </div>
+  </main>
+</body>
+</html>

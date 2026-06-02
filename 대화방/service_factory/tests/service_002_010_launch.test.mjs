@@ -76,7 +76,11 @@ const progress = await readJson(path.join(root, "service_execution_progress.json
 for (const serviceNumber of ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010"]) {
   assert.ok(progress.completedServices.includes(serviceNumber), `progress must include ${serviceNumber}`);
 }
-assert.match(progress.nextService, /^\d{3}$/);
-assert.ok(Number(progress.nextService) >= 11);
+if (progress.status === "complete") {
+  assert.equal(progress.nextService, null);
+} else {
+  assert.match(progress.nextService, /^\d{3}$/);
+  assert.ok(Number(progress.nextService) >= 11);
+}
 
 console.log("service_002_010_launch.test.mjs passed");

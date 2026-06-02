@@ -1,0 +1,94 @@
+{
+  "serviceNumber": "299",
+  "sourceServiceId": "svc-437",
+  "rank": 299,
+  "name": "숙박업 설문/폼 서비스",
+  "category": "forms",
+  "niche": "숙박업",
+  "score": 81,
+  "tier": "B",
+  "channel": "web-marketplace",
+  "platform": {
+    "primary": "Payhip",
+    "setupNote": "사용자 소유 판매자 계정에서 상품/링크를 생성해야 합니다."
+  },
+  "payment": {
+    "primary": "PayPal",
+    "linkPlaceholder": "PAYMENT_LINK_HERE",
+    "ownerRequired": true,
+    "forms": [
+      {
+        "channel": "marketplace",
+        "name": "Gumroad",
+        "accountRequired": true,
+        "whenToUse": "초저가 ZIP, 문서, 템플릿",
+        "caveat": "수수료/정산 조건 확인."
+      },
+      {
+        "channel": "marketplace",
+        "name": "Payhip",
+        "accountRequired": true,
+        "whenToUse": "디지털 다운로드 스토어",
+        "caveat": "게이트웨이 연결 필요."
+      },
+      {
+        "channel": "marketplace",
+        "name": "Ko-fi Shop",
+        "accountRequired": true,
+        "whenToUse": "후원형 디지털 상품과 커미션",
+        "caveat": "PayPal/Stripe 연결 국가 확인."
+      },
+      {
+        "channel": "marketplace",
+        "name": "크몽 결제",
+        "accountRequired": true,
+        "whenToUse": "한국어 설치 대행/서비스 패키지",
+        "caveat": "플랫폼 정책과 수수료 확인."
+      }
+    ]
+  },
+  "priceAnchor": "₩350,000 setup + ₩80,000/mo",
+  "customer": "숙박업 운영자와 담당자",
+  "problem": "예약 변경과 노쇼 대응이 수작업이다",
+  "offer": "Formbricks 또는 로컬 도구를 활용해 숙박업의 설문/폼 흐름을 세팅하고 운영 문서까지 납품한다.",
+  "openSource": "Formbricks",
+  "mvpDays": 4,
+  "firstAction": "숙박업의 현재 업무 화면 1개와 샘플 데이터 10개를 받아 첫 MVP 범위를 고정한다.",
+  "sourceRisk": "오픈소스 라이선스, 고객 계정 권한, 개인정보/결제 책임은 계약 전 확인해야 한다.",
+  "toolStack": "Tally, Google Forms, Typeform 또는 고객 접수 도구",
+  "weakness": "스팸 방지, 수집 동의, 저장 위치가 없으면 실제 운영에 취약하다.",
+  "requiredAddition": "수집 동의 문구, 스팸 방지, CSV 백업 규칙을 추가한다.",
+  "deliverables": [
+    "접수 폼 문항표",
+    "수집 동의 문구",
+    "스팸 방지 규칙",
+    "CSV 백업 규칙",
+    "담당자 알림 흐름도",
+    "운영 인수인계 체크리스트"
+  ],
+  "implementationSteps": [
+    "수집 항목, 필수/선택 문항, 개인정보 동의 문구를 확정한다.",
+    "접수 완료 메시지와 담당자 알림 흐름을 만든다.",
+    "스팸, 중복, 빈 값, CSV 내보내기 테스트를 진행한다.",
+    "백업 주기와 삭제 요청 대응 절차를 인수인계한다."
+  ],
+  "channelGuidance": [
+    {
+      "channel": "marketplace",
+      "bestFor": "초기 수요 검증, 한국어 대행, 디지털 템플릿",
+      "payment": "Gumroad, Ko-fi, Payhip, 크몽, 숨고, 네이버 스마트스토어",
+      "buildPath": "상품 페이지 → 샘플 이미지 → 고정가 패키지 → 후기 수집 → 자체 웹 전환",
+      "caveat": "플랫폼 수수료, 금지 서비스, 정산 주기, 환불 정책을 확인한다."
+    }
+  ],
+  "qaChecklist": [
+    "랜딩 페이지에 PAYMENT_LINK_HERE 자리표시자가 남아 있어 사용자 소유 결제 링크로 교체 가능하다.",
+    "실제 결제는 사용자 소유 계정에서만 받는다는 문구가 모든 문서에 있다.",
+    "확정 수익 또는 확정 매출 표현이 없다.",
+    "환불/주의/성과 비보장 안내가 포함되어 있다.",
+    "필수 보강 항목이 랜딩, 오퍼, 체크리스트, 아웃리치에 반영되어 있다.",
+    "납품물이 최소 6개 이상이고 고객 권한 확인 항목이 있다."
+  ],
+  "caveat": "실제 결제는 사용자 소유 계정에서만 진행하며 수익을 보장하지 않습니다.",
+  "generatedAt": "2026-06-02"
+}

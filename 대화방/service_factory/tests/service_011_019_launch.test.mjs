@@ -114,6 +114,10 @@ for (const serviceNumber of [
 ]) {
   assert.ok(progress.completedServices.includes(serviceNumber), `progress must include ${serviceNumber}`);
 }
-assert.equal(progress.nextService, "020");
+if (progress.status === "complete") {
+  assert.equal(progress.nextService, null);
+} else {
+  assert.equal(progress.nextService, "020");
+}
 
 console.log("service_011_019_launch.test.mjs passed");
