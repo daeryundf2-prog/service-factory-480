@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>480개 서비스 팩토리</title>
+  <style>
+    :root{--ink:#111715;--muted:#5c6863;--paper:#f6f7ef;--panel:#fff;--line:#d7ded6;--green:#17633f;--navy:#10261f;--gold:#c2862d;--red:#b64252}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,rgba(23,99,63,.12),transparent 34%),linear-gradient(315deg,rgba(194,134,45,.14),transparent 42%),var(--paper);color:var(--ink);font-family:"Segoe UI","Malgun Gothic",sans-serif}
+    main{width:min(1320px,calc(100% - 32px));margin:0 auto;padding:30px 0 60px}header{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:16px;margin-bottom:14px}.hero,.stat,.toolbar,.card,.panel{border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.94);box-shadow:0 18px 46px rgba(18,38,32,.12)}.hero{padding:30px}.eyebrow{margin:0 0 10px;color:var(--red);font-weight:900}h1{margin:0;font-size:clamp(40px,7vw,88px);line-height:.96;letter-spacing:0}.lead,p{color:var(--muted);line-height:1.52}.stat{padding:24px;background:var(--navy);color:white}.stat strong{display:block;color:#f2c15c;font-size:52px}.stat span{color:#e2ebe5}.toolbar{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:1.4fr repeat(3,minmax(150px,.4fr));gap:10px;padding:12px;margin-bottom:14px}input,select{min-height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:white;font-size:15px;color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card{min-height:330px;padding:15px;display:grid;gap:9px}.meta{display:flex;flex-wrap:wrap;gap:6px}.pill{border-radius:999px;padding:4px 8px;font-size:11px;font-weight:900;background:rgba(23,99,63,.12);color:var(--green)}h2{margin:0;font-size:18px;line-height:1.25}.price{font-weight:900;color:var(--gold)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-self:end}button,a.button{min-height:40px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.copy{background:var(--ink);color:white;border-color:var(--ink)}.panel{margin-top:14px;padding:18px}.matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.mini{border:1px solid var(--line);border-radius:8px;padding:12px;background:white}.empty{grid-column:1/-1;text-align:center;padding:28px;border:1px dashed var(--line);border-radius:8px;color:var(--muted)}@media(max-width:1100px){header,.toolbar,.grid,.matrix{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <section class="hero">
+      <p class="eyebrow">Platform + payment mapped service factory</p>
+      <h1>480개 서비스 판매판</h1>
+      <p class="lead">업종 40개와 서비스 유형 12개를 조합해 480개 서비스 후보를 만들고, 각 후보마다 판매 플랫폼과 결제 시스템을 붙였습니다.</p>
+    </section>
+    <aside class="stat"><strong id="count">480</strong><span>실제 결제는 사용자 소유 계정에서만 가능합니다. 이 페이지는 상품화, 플랫폼 선택, 결제 연결 준비판입니다.</span></aside>
+  </header>
+  <section class="toolbar">
+    <input id="service-search" type="search" placeholder="업종, 오픈소스, 플랫폼, 결제 검색">
+    <select id="category-filter"><option value="all">전체 카테고리</option></select>
+    <select id="platform-filter"><option value="all">전체 플랫폼</option></select>
+    <select id="payment-filter"><option value="all">전체 결제</option></select>
+  </section>
+  <section id="service-grid" class="grid" aria-live="polite"></section>
+  <section class="panel">
+    <h2>플랫폼 선택</h2>
+    <div id="platform-matrix" class="matrix"></div>
+  </section>
+  <section class="panel">
+    <h2>결제 시스템</h2>
+    <div id="payment-matrix" class="matrix"></div>
+  </section>
+</main>
+<script>
+const state={services:[],platforms:[],payments:[],query:"",category:"all",platform:"all",payment:"all"};
+const params=new URLSearchParams(location.search);
+state.query=params.get("q")||""; state.platform=params.get("platform")||"all"; state.payment=params.get("payment")||"all";
+const grid=document.querySelector("#service-grid"), count=document.querySelector("#count"), search=document.querySelector("#service-search"), categoryFilter=document.querySelector("#category-filter"), platformFilter=document.querySelector("#platform-filter"), paymentFilter=document.querySelector("#payment-filter");
+search.value=state.query;
+const uniq=(items,key)=>[...new Set(items.map(item=>item[key]))].sort();
+const option=(value,label=value)=>`<option value="${value}">${label}</option>`;
+const syncUrl=()=>{const next=new URLSearchParams(); if(state.query)next.set("q",state.query); if(state.platform!=="all")next.set("platform",state.platform); if(state.payment!=="all")next.set("payment",state.payment); history.replaceState(null,"",`${location.pathname}?${next.toString()}`)};
+const offerText=s=>`${s.name}\n플랫폼: ${s.platform}\n결제: ${s.paymentSystem}\n고객: ${s.customer}\n제안: ${s.offer}\n가격: ${s.price}\n주의: ${s.risk}`;
+function render(){
+ const q=state.query.toLowerCase();
+ const visible=state.services.filter(s=>(state.category==="all"||s.category===state.category)&&(state.platform==="all"||s.platform===state.platform)&&(state.payment==="all"||s.paymentSystem===state.payment)&&Object.values(s).join(" ").toLowerCase().includes(q));
+ count.textContent=String(visible.length);
+ grid.innerHTML=visible.length?visible.slice(0,120).map(s=>`<article class="card"><div class="meta"><span class="pill">${s.category}</span><span class="pill">${s.niche}</span><span class="pill">${s.openSource}</span></div><h2>${s.name}</h2><p><b>문제:</b> ${s.problem}</p><p><b>제안:</b> ${s.offer}</p><p><b>플랫폼:</b> ${s.platform}</p><p><b>결제:</b> ${s.paymentSystem}</p><p class="price">${s.price}</p><p><b>첫 액션:</b> ${s.firstAction}</p><div class="actions"><a class="button" href="결제시스템_세팅가이드.md">결제 가이드</a><button class="copy" data-copy="${s.id}">복사</button></div></article>`).join(""):`<div class="empty">검색 결과가 없습니다.</div>`;
+}
+function renderMatrices(){
+ document.querySelector("#platform-matrix").innerHTML=state.platforms.map(p=>`<div class="mini"><b>${p.name}</b><p>${p.bestFor}</p><p><b>결제:</b> ${p.paymentFit}</p><p>${p.caveat}</p></div>`).join("");
+ document.querySelector("#payment-matrix").innerHTML=state.payments.map(p=>`<div class="mini"><b>${p.name}</b><p>${p.bestFor}</p><p><b>결제 있음:</b> ${p.hasPayment?"예":"아니오"}</p><p>${p.caveat}</p></div>`).join("");
+}
+grid.addEventListener("click",async e=>{const b=e.target.closest("[data-copy]"); if(!b)return; const s=state.services.find(x=>x.id===b.dataset.copy); await navigator.clipboard.writeText(offerText(s)); b.textContent="복사됨"; setTimeout(()=>b.textContent="복사",800)});
+search.addEventListener("input",e=>{state.query=e.target.value; syncUrl(); render()});
+categoryFilter.addEventListener("change",e=>{state.category=e.target.value; render()});
+platformFilter.addEventListener("change",e=>{state.platform=e.target.value; syncUrl(); render()});
+paymentFilter.addEventListener("change",e=>{state.payment=e.target.value; syncUrl(); render()});
+Promise.all([fetch("services_480.json").then(r=>r.json()),fetch("platforms.json").then(r=>r.json()),fetch("payment_systems.json").then(r=>r.json())]).then(([services,platforms,payments])=>{state.services=services;state.platforms=platforms;state.payments=payments;categoryFilter.innerHTML+=uniq(services,"category").map(v=>option(v)).join("");platformFilter.innerHTML+=platforms.map(p=>option(p.name)).join("");paymentFilter.innerHTML+=payments.map(p=>option(p.name)).join("");platformFilter.value=state.platform;paymentFilter.value=state.payment;render();renderMatrices()});
+</script>
+</body>
+</html>

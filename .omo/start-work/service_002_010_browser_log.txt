@@ -1,0 +1,13 @@
+﻿CDP screenshot QA 2026-06-02T14:10:22.6276594+09:00
+edgePid=33156
+nodeExit=0
+{
+  "url": "http://127.0.0.1:8820/service_010_hospital_analytics/index.html",
+  "titleInfo": {
+    "title": "병원 분석 대시보드 서비스",
+    "h1": "병원 분석 대시보드 서비스",
+    "hasPayment": false
+  },
+  "screenshot": "C:\\Users\\Daeryun\\Desktop\\홈페이지 자료정보\\대화방\\service_factory\\..\\..\\.omo\\start-work\\service_002_010_edge_010.png",
+  "bytes": 65526
+}

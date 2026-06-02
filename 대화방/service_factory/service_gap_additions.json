@@ -1,0 +1,866 @@
+[
+  {
+    "id": "gap-01",
+    "category": "platform",
+    "title": "platform 보강 1",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-352",
+      "svc-364",
+      "svc-253",
+      "svc-256",
+      "svc-350",
+      "svc-241",
+      "svc-381",
+      "svc-100",
+      "svc-001",
+      "svc-004"
+    ]
+  },
+  {
+    "id": "gap-02",
+    "category": "payment",
+    "title": "payment 보강 2",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-112",
+      "svc-213",
+      "svc-393",
+      "svc-016",
+      "svc-254",
+      "svc-354",
+      "svc-242",
+      "svc-098",
+      "svc-002",
+      "svc-141"
+    ]
+  },
+  {
+    "id": "gap-03",
+    "category": "legal",
+    "title": "legal 보강 3",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-366",
+      "svc-014",
+      "svc-073",
+      "svc-028",
+      "svc-240",
+      "svc-351",
+      "svc-252",
+      "svc-378",
+      "svc-102",
+      "svc-114"
+    ]
+  },
+  {
+    "id": "gap-04",
+    "category": "ops",
+    "title": "ops 보강 4",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-210",
+      "svc-396",
+      "svc-018",
+      "svc-255",
+      "svc-045",
+      "svc-074",
+      "svc-239",
+      "svc-357",
+      "svc-099",
+      "svc-003"
+    ]
+  },
+  {
+    "id": "gap-05",
+    "category": "android",
+    "title": "android 보강 5",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-144",
+      "svc-367",
+      "svc-369",
+      "svc-395",
+      "svc-015",
+      "svc-261",
+      "svc-084",
+      "svc-030",
+      "svc-229",
+      "svc-232"
+    ]
+  },
+  {
+    "id": "gap-06",
+    "category": "apple",
+    "title": "apple 보강 6",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-244",
+      "svc-379",
+      "svc-373",
+      "svc-105",
+      "svc-009",
+      "svc-143",
+      "svc-115",
+      "svc-117",
+      "svc-211",
+      "svc-205"
+    ]
+  },
+  {
+    "id": "gap-07",
+    "category": "web",
+    "title": "web 보강 7",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-385",
+      "svc-021",
+      "svc-042",
+      "svc-230",
+      "svc-353",
+      "svc-325",
+      "svc-477",
+      "svc-129",
+      "svc-280",
+      "svc-196"
+    ]
+  },
+  {
+    "id": "gap-08",
+    "category": "sales",
+    "title": "sales 보강 8",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-133",
+      "svc-448",
+      "svc-309",
+      "svc-169",
+      "svc-172",
+      "svc-436",
+      "svc-225",
+      "svc-365",
+      "svc-368",
+      "svc-372"
+    ]
+  },
+  {
+    "id": "gap-09",
+    "category": "platform",
+    "title": "platform 보강 9",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-421",
+      "svc-424",
+      "svc-085",
+      "svc-088",
+      "svc-297",
+      "svc-386",
+      "svc-157",
+      "svc-409",
+      "svc-465",
+      "svc-184"
+    ]
+  },
+  {
+    "id": "gap-10",
+    "category": "payment",
+    "title": "payment 보강 10",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-268",
+      "svc-337",
+      "svc-340",
+      "svc-258",
+      "svc-076",
+      "svc-031",
+      "svc-033",
+      "svc-057",
+      "svc-349",
+      "svc-359"
+    ]
+  },
+  {
+    "id": "gap-11",
+    "category": "legal",
+    "title": "legal 보강 11",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-326",
+      "svc-246",
+      "svc-380",
+      "svc-384",
+      "svc-101",
+      "svc-006",
+      "svc-134",
+      "svc-113",
+      "svc-116",
+      "svc-120"
+    ]
+  },
+  {
+    "id": "gap-12",
+    "category": "ops",
+    "title": "ops 보강 12",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-212",
+      "svc-216",
+      "svc-170",
+      "svc-434",
+      "svc-361",
+      "svc-371",
+      "svc-422",
+      "svc-086",
+      "svc-392",
+      "svc-158"
+    ]
+  },
+  {
+    "id": "gap-13",
+    "category": "android",
+    "title": "android 보강 13",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-410",
+      "svc-182",
+      "svc-017",
+      "svc-266",
+      "svc-338",
+      "svc-043",
+      "svc-037",
+      "svc-231",
+      "svc-237",
+      "svc-238"
+    ]
+  },
+  {
+    "id": "gap-14",
+    "category": "apple",
+    "title": "apple 보강 14",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-355",
+      "svc-336",
+      "svc-480",
+      "svc-126",
+      "svc-243",
+      "svc-249",
+      "svc-282",
+      "svc-198",
+      "svc-376",
+      "svc-383"
+    ]
+  },
+  {
+    "id": "gap-15",
+    "category": "web",
+    "title": "web 보강 15",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-382",
+      "svc-097",
+      "svc-107",
+      "svc-408",
+      "svc-140",
+      "svc-450",
+      "svc-312",
+      "svc-109",
+      "svc-119",
+      "svc-208"
+    ]
+  },
+  {
+    "id": "gap-16",
+    "category": "sales",
+    "title": "sales 보강 16",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-215",
+      "svc-214",
+      "svc-438",
+      "svc-228",
+      "svc-324",
+      "svc-362",
+      "svc-294",
+      "svc-387",
+      "svc-388",
+      "svc-394"
+    ]
+  },
+  {
+    "id": "gap-17",
+    "category": "platform",
+    "title": "platform 보강 17",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-168",
+      "svc-156",
+      "svc-420",
+      "svc-462",
+      "svc-186",
+      "svc-013",
+      "svc-023",
+      "svc-270",
+      "svc-259",
+      "svc-072"
+    ]
+  },
+  {
+    "id": "gap-18",
+    "category": "payment",
+    "title": "payment 보강 18",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-078",
+      "svc-029",
+      "svc-032",
+      "svc-036",
+      "svc-060",
+      "svc-360",
+      "svc-479",
+      "svc-247",
+      "svc-374",
+      "svc-103"
+    ]
+  },
+  {
+    "id": "gap-19",
+    "category": "legal",
+    "title": "legal 보강 19",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-007",
+      "svc-407",
+      "svc-135",
+      "svc-136",
+      "svc-142",
+      "svc-311",
+      "svc-110",
+      "svc-206",
+      "svc-171",
+      "svc-435"
+    ]
+  },
+  {
+    "id": "gap-20",
+    "category": "ops",
+    "title": "ops 보강 20",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-227",
+      "svc-323",
+      "svc-423",
+      "svc-087",
+      "svc-155",
+      "svc-183",
+      "svc-019",
+      "svc-267",
+      "svc-339",
+      "svc-264"
+    ]
+  },
+  {
+    "id": "gap-21",
+    "category": "android",
+    "title": "android 보강 21",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-044",
+      "svc-048",
+      "svc-071",
+      "svc-075",
+      "svc-081",
+      "svc-025",
+      "svc-035",
+      "svc-234",
+      "svc-059",
+      "svc-356"
+    ]
+  },
+  {
+    "id": "gap-22",
+    "category": "apple",
+    "title": "apple 보강 22",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-328",
+      "svc-469",
+      "svc-127",
+      "svc-121",
+      "svc-283",
+      "svc-285",
+      "svc-199",
+      "svc-201",
+      "svc-108",
+      "svc-012"
+    ]
+  },
+  {
+    "id": "gap-23",
+    "category": "web",
+    "title": "web 보강 23",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-397",
+      "svc-400",
+      "svc-451",
+      "svc-453",
+      "svc-301",
+      "svc-177",
+      "svc-441",
+      "svc-217",
+      "svc-313",
+      "svc-316"
+    ]
+  },
+  {
+    "id": "gap-24",
+    "category": "sales",
+    "title": "sales 보강 24",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-363",
+      "svc-429",
+      "svc-093",
+      "svc-295",
+      "svc-289",
+      "svc-390",
+      "svc-160",
+      "svc-145",
+      "svc-148",
+      "svc-412"
+    ]
+  },
+  {
+    "id": "gap-25",
+    "category": "platform",
+    "title": "platform 보강 25",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-463",
+      "svc-457",
+      "svc-189",
+      "svc-024",
+      "svc-273",
+      "svc-345",
+      "svc-257",
+      "svc-263",
+      "svc-260",
+      "svc-040"
+    ]
+  },
+  {
+    "id": "gap-26",
+    "category": "payment",
+    "title": "payment 보강 26",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-047",
+      "svc-046",
+      "svc-061",
+      "svc-064",
+      "svc-079",
+      "svc-026",
+      "svc-233",
+      "svc-049",
+      "svc-358",
+      "svc-470"
+    ]
+  },
+  {
+    "id": "gap-27",
+    "category": "legal",
+    "title": "legal 보강 27",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-245",
+      "svc-251",
+      "svc-375",
+      "svc-104",
+      "svc-005",
+      "svc-011",
+      "svc-008",
+      "svc-398",
+      "svc-138",
+      "svc-302"
+    ]
+  },
+  {
+    "id": "gap-28",
+    "category": "ops",
+    "title": "ops 보강 28",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-111",
+      "svc-207",
+      "svc-218",
+      "svc-314",
+      "svc-370",
+      "svc-146",
+      "svc-020",
+      "svc-038",
+      "svc-062",
+      "svc-235"
+    ]
+  },
+  {
+    "id": "gap-29",
+    "category": "android",
+    "title": "android 보강 29",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-050",
+      "svc-330",
+      "svc-476",
+      "svc-128",
+      "svc-132",
+      "svc-281",
+      "svc-284",
+      "svc-288",
+      "svc-197",
+      "svc-200"
+    ]
+  },
+  {
+    "id": "gap-30",
+    "category": "apple",
+    "title": "apple 보강 30",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-204",
+      "svc-106",
+      "svc-449",
+      "svc-452",
+      "svc-456",
+      "svc-308",
+      "svc-118",
+      "svc-174",
+      "svc-437",
+      "svc-224"
+    ]
+  },
+  {
+    "id": "gap-31",
+    "category": "web",
+    "title": "web 보강 31",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-426",
+      "svc-090",
+      "svc-296",
+      "svc-300",
+      "svc-391",
+      "svc-162",
+      "svc-414",
+      "svc-464",
+      "svc-468",
+      "svc-185"
+    ]
+  },
+  {
+    "id": "gap-32",
+    "category": "sales",
+    "title": "sales 보강 32",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-022",
+      "svc-269",
+      "svc-342",
+      "svc-077",
+      "svc-083",
+      "svc-027",
+      "svc-056",
+      "svc-327",
+      "svc-333",
+      "svc-471"
+    ]
+  },
+  {
+    "id": "gap-33",
+    "category": "platform",
+    "title": "platform 보강 33",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-472",
+      "svc-478",
+      "svc-124",
+      "svc-131",
+      "svc-130",
+      "svc-277",
+      "svc-287",
+      "svc-193",
+      "svc-203",
+      "svc-399"
+    ]
+  },
+  {
+    "id": "gap-34",
+    "category": "payment",
+    "title": "payment 보강 34",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-405",
+      "svc-406",
+      "svc-139",
+      "svc-445",
+      "svc-455",
+      "svc-303",
+      "svc-304",
+      "svc-310",
+      "svc-433",
+      "svc-443"
+    ]
+  },
+  {
+    "id": "gap-35",
+    "category": "legal",
+    "title": "legal 보강 35",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-219",
+      "svc-220",
+      "svc-226",
+      "svc-315",
+      "svc-321",
+      "svc-322",
+      "svc-292",
+      "svc-299",
+      "svc-298",
+      "svc-159"
+    ]
+  },
+  {
+    "id": "gap-36",
+    "category": "ops",
+    "title": "ops 보강 36",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-165",
+      "svc-147",
+      "svc-153",
+      "svc-154",
+      "svc-411",
+      "svc-417",
+      "svc-460",
+      "svc-467",
+      "svc-466",
+      "svc-181"
+    ]
+  },
+  {
+    "id": "gap-37",
+    "category": "android",
+    "title": "android 보강 37",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-191",
+      "svc-265",
+      "svc-275",
+      "svc-039",
+      "svc-063",
+      "svc-069",
+      "svc-070",
+      "svc-034",
+      "svc-236",
+      "svc-051"
+    ]
+  },
+  {
+    "id": "gap-38",
+    "category": "apple",
+    "title": "apple 보강 38",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-052",
+      "svc-058",
+      "svc-331",
+      "svc-122",
+      "svc-248",
+      "svc-278",
+      "svc-194",
+      "svc-377",
+      "svc-446",
+      "svc-209"
+    ]
+  },
+  {
+    "id": "gap-39",
+    "category": "web",
+    "title": "web 보강 39",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-175",
+      "svc-439",
+      "svc-427",
+      "svc-091",
+      "svc-290",
+      "svc-389",
+      "svc-163",
+      "svc-415",
+      "svc-458",
+      "svc-187"
+    ]
+  },
+  {
+    "id": "gap-40",
+    "category": "sales",
+    "title": "sales 보강 40",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-271",
+      "svc-343",
+      "svc-262",
+      "svc-474",
+      "svc-250",
+      "svc-010",
+      "svc-402",
+      "svc-137",
+      "svc-306",
+      "svc-180"
+    ]
+  },
+  {
+    "id": "gap-41",
+    "category": "platform",
+    "title": "platform 보강 41",
+    "fix": "각 서비스별 1차 판매 플랫폼과 백업 플랫폼을 지정한다.",
+    "appliesTo": [
+      "svc-444",
+      "svc-222",
+      "svc-318",
+      "svc-432",
+      "svc-096",
+      "svc-150",
+      "svc-192",
+      "svc-276",
+      "svc-348",
+      "svc-066"
+    ]
+  },
+  {
+    "id": "gap-42",
+    "category": "payment",
+    "title": "payment 보강 42",
+    "fix": "착수금, 월구독, 인보이스, 앱스토어 결제 중 하나를 기본값으로 지정한다.",
+    "appliesTo": [
+      "svc-080",
+      "svc-054",
+      "svc-329",
+      "svc-335",
+      "svc-123",
+      "svc-279",
+      "svc-195",
+      "svc-401",
+      "svc-447",
+      "svc-173"
+    ]
+  },
+  {
+    "id": "gap-43",
+    "category": "legal",
+    "title": "legal 보강 43",
+    "fix": "라이선스, 개인정보, 환불, 세금 책임 문구를 계약 전 체크리스트로 만든다.",
+    "appliesTo": [
+      "svc-179",
+      "svc-176",
+      "svc-440",
+      "svc-317",
+      "svc-425",
+      "svc-431",
+      "svc-428",
+      "svc-089",
+      "svc-095",
+      "svc-092"
+    ]
+  },
+  {
+    "id": "gap-44",
+    "category": "ops",
+    "title": "ops 보강 44",
+    "fix": "백업, 장애 알림, 업데이트, 월 점검표를 납품물에 포함한다.",
+    "appliesTo": [
+      "svc-291",
+      "svc-161",
+      "svc-167",
+      "svc-149",
+      "svc-413",
+      "svc-419",
+      "svc-459",
+      "svc-188",
+      "svc-272",
+      "svc-341"
+    ]
+  },
+  {
+    "id": "gap-45",
+    "category": "android",
+    "title": "android 보강 45",
+    "fix": "Android 앱은 디지털 앱 기능 결제 시 Google Play Billing을 우선 검토한다.",
+    "appliesTo": [
+      "svc-347",
+      "svc-344",
+      "svc-041",
+      "svc-065",
+      "svc-082",
+      "svc-475",
+      "svc-286",
+      "svc-202",
+      "svc-403",
+      "svc-454"
+    ]
+  },
+  {
+    "id": "gap-46",
+    "category": "apple",
+    "title": "apple 보강 46",
+    "fix": "iOS 앱은 디지털 콘텐츠/기능 결제 시 Apple In-App Purchase 또는 StoreKit 정책을 우선 검토한다.",
+    "appliesTo": [
+      "svc-307",
+      "svc-442",
+      "svc-223",
+      "svc-319",
+      "svc-151",
+      "svc-190",
+      "svc-274",
+      "svc-067",
+      "svc-055",
+      "svc-332"
+    ]
+  },
+  {
+    "id": "gap-47",
+    "category": "web",
+    "title": "web 보강 47",
+    "fix": "웹 서비스는 Stripe Payment Links, Paddle, Lemon Squeezy 중 하나를 붙인다.",
+    "appliesTo": [
+      "svc-473",
+      "svc-125",
+      "svc-404",
+      "svc-305",
+      "svc-221",
+      "svc-320",
+      "svc-293",
+      "svc-164",
+      "svc-152",
+      "svc-416"
+    ]
+  },
+  {
+    "id": "gap-48",
+    "category": "sales",
+    "title": "sales 보강 48",
+    "fix": "고객군별 첫 문장, 진단 질문, 업셀 옵션을 서비스 카드에 연결한다.",
+    "appliesTo": [
+      "svc-461",
+      "svc-068",
+      "svc-053",
+      "svc-334",
+      "svc-178",
+      "svc-430",
+      "svc-094",
+      "svc-166",
+      "svc-418",
+      "svc-346"
+    ]
+  }
+]

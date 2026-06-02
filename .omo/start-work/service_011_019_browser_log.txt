@@ -1,0 +1,17 @@
+﻿CDP browser QA 2026-06-02T15:23:27.0673811+09:00
+invocation=C:\Users\Daeryun\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe tools/cdp_screenshot.mjs 9224 http://127.0.0.1:8831/service_019_hospital_crm/index.html C:\Users\Daeryun\Desktop\홈페이지 자료정보\대화방\service_factory\..\..\.omo\start-work\service_011_019_edge_019.png
+edgePid=22644
+serverPid=35340
+nodeExit=0
+{
+  "url": "http://127.0.0.1:8831/service_019_hospital_crm/index.html",
+  "titleInfo": {
+    "title": "병원 CRM 세팅 서비스",
+    "h1": "병원 CRM 세팅 서비스",
+    "hasPayment": false
+  },
+  "screenshot": "C:\\Users\\Daeryun\\Desktop\\홈페이지 자료정보\\대화방\\service_factory\\..\\..\\.omo\\start-work\\service_011_019_edge_019.png",
+  "bytes": 65192
+}
+cleanup: killed edge pid 22644; killed python http.server pid 35340; removed C:\Users\Daeryun\AppData\Local\Temp\edge-cdp-service011019-5028
+cleanup-verified: removed=1 remaining=0; python http.server 8830/8831 count=0

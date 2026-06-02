@@ -1,0 +1,49 @@
+{
+  "serviceNumber": "012",
+  "sourceServiceId": "svc-213",
+  "rank": 12,
+  "name": "쇼핑몰 내부 운영툴 서비스",
+  "category": "internal-tools",
+  "niche": "쇼핑몰",
+  "score": 92,
+  "tier": "A",
+  "channel": "web-service",
+  "platform": {
+    "primary": "Paddle",
+    "setupNote": "사용자 소유 판매자 계정에서 상품/링크를 생성해야 합니다."
+  },
+  "payment": {
+    "primary": "Paddle",
+    "linkPlaceholder": "PAYMENT_LINK_HERE",
+    "ownerRequired": true
+  },
+  "priceAnchor": "₩1,200,000 setup + ₩350,000/mo",
+  "offer": "Appsmith 또는 로컬 도구를 활용해 쇼핑몰의 내부 운영툴 흐름을 세팅하고 운영 문서까지 납품한다.",
+  "openSource": "Appsmith",
+  "toolStack": "Appsmith, Retool 또는 로컬 관리자 화면",
+  "weakness": "DB 쓰기 권한과 감사 로그가 없으면 운영 사고로 이어질 수 있다.",
+  "requiredAddition": "감사 로그, 쓰기 권한 제한, 운영자 교육 문서를 추가한다.",
+  "deliverables": [
+    "감사 로그 설계",
+    "쓰기 권한 제한표",
+    "운영자 교육 문서",
+    "관리 화면 구성표",
+    "승인 흐름 정의서",
+    "유지보수 점검표"
+  ],
+  "implementationSteps": [
+    "운영자가 반복 입력하는 데이터와 승인 흐름을 정의한다.",
+    "쓰기 권한과 감사 로그 기준을 먼저 설계한다.",
+    "관리 화면과 입력 검증을 세팅한다.",
+    "운영자 교육 문서와 장애 대응 절차를 납품한다."
+  ],
+  "qaChecklist": [
+    "랜딩 페이지에 PAYMENT_LINK_HERE 자리표시자가 남아 있어 사용자 소유 결제 링크로 교체 가능하다.",
+    "실제 결제는 사용자 소유 계정에서만 받는다는 문구가 모든 문서에 있다.",
+    "확정 수익 또는 확정 매출 표현이 없다.",
+    "환불/주의/성과 비보장 안내가 포함되어 있다.",
+    "필수 보강 항목이 랜딩, 오퍼, 체크리스트, 아웃리치에 반영되어 있다.",
+    "납품물이 최소 6개 이상이고 고객 권한 확인 항목이 있다."
+  ],
+  "caveat": "실제 결제는 사용자 소유 계정에서만 진행하며 수익을 보장하지 않습니다."
+}

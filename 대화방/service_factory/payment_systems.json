@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Stripe Payment Links",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://docs.stripe.com/payment-links",
+    "bestFor": "착수금, 월 유지보수, 서비스 결제",
+    "setupSteps": [
+      "Stripe 계정 인증",
+      "상품과 가격 생성",
+      "Payment Link 생성",
+      "카탈로그 CTA 교체"
+    ],
+    "caveat": "실제 결제는 사용자 소유 Stripe 계정에서만 가능하다."
+  },
+  {
+    "name": "Gumroad",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://gumroad.com/",
+    "bestFor": "ZIP, 템플릿, 문서형 디지털 상품",
+    "setupSteps": [
+      "계정 생성",
+      "상품 파일 업로드",
+      "가격 설정",
+      "상품 링크 공유"
+    ],
+    "caveat": "정산과 수수료는 최신 정책 확인."
+  },
+  {
+    "name": "Ko-fi Payments",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://help.ko-fi.com/hc/en-us/articles/115003980093-How-do-I-get-paid",
+    "bestFor": "후원, 커미션, 소액 디지털 상품",
+    "setupSteps": [
+      "Ko-fi 계정",
+      "PayPal/Stripe 연결",
+      "Shop 상품",
+      "링크 배포"
+    ],
+    "caveat": "지원 결제수단은 연결 계정에 따라 달라진다."
+  },
+  {
+    "name": "Payhip Checkout",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://help.payhip.com/article/164-how-to-sell-your-first-product-on-payhip",
+    "bestFor": "디지털 다운로드 스토어",
+    "setupSteps": [
+      "상품 생성",
+      "파일 업로드",
+      "게이트웨이 연결",
+      "다운로드 테스트"
+    ],
+    "caveat": "게이트웨이 승인과 세금 설정 확인."
+  },
+  {
+    "name": "Paddle",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://developer.paddle.com/get-started/how-paddle-works/digital-products",
+    "bestFor": "글로벌 소프트웨어/디지털 상품",
+    "setupSteps": [
+      "판매자 승인",
+      "상품/가격 생성",
+      "Checkout 연결",
+      "웹훅 납품"
+    ],
+    "caveat": "Merchant of Record지만 승인 절차가 필요하다."
+  },
+  {
+    "name": "Lemon Squeezy",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://www.lemonsqueezy.com/ecommerce/digital-products",
+    "bestFor": "소프트웨어 라이선스와 다운로드",
+    "setupSteps": [
+      "스토어 생성",
+      "상품 생성",
+      "체크아웃 링크",
+      "라이선스/파일 설정"
+    ],
+    "caveat": "계정/상품 승인 여부를 확인한다."
+  },
+  {
+    "name": "PayPal",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://www.paypal.com/business",
+    "bestFor": "국제 고객의 간단한 인보이스/링크",
+    "setupSteps": [
+      "비즈니스 계정",
+      "결제 링크 또는 인보이스",
+      "상품 설명",
+      "정산 확인"
+    ],
+    "caveat": "분쟁/환불 정책을 명확히 해야 한다."
+  },
+  {
+    "name": "네이버페이",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://admin.pay.naver.com/",
+    "bestFor": "한국 고객 결제",
+    "setupSteps": [
+      "사업자/가맹 신청",
+      "상품 등록",
+      "정산 정보",
+      "결제 테스트"
+    ],
+    "caveat": "가맹 심사와 판매 가능 상품 정책이 중요하다."
+  },
+  {
+    "name": "토스페이먼츠",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://www.tosspayments.com/",
+    "bestFor": "한국 자체 사이트 결제",
+    "setupSteps": [
+      "가맹 신청",
+      "API/결제창 설정",
+      "상품/정산 정보",
+      "테스트 결제"
+    ],
+    "caveat": "개발 연동과 심사가 필요하다."
+  },
+  {
+    "name": "계좌이체/세금계산서",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://www.nts.go.kr/",
+    "bestFor": "B2B 고가 구축/월 유지보수",
+    "setupSteps": [
+      "견적서",
+      "계약서",
+      "계좌 안내",
+      "세금계산서 발행"
+    ],
+    "caveat": "회계/세무 처리는 전문가 확인이 필요하다."
+  },
+  {
+    "name": "크몽 결제",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://kmong.com/",
+    "bestFor": "한국어 서비스 거래 보호",
+    "setupSteps": [
+      "전문가 계정",
+      "서비스 상품",
+      "옵션 가격",
+      "구매 링크 전달"
+    ],
+    "caveat": "플랫폼 수수료와 정산주기를 확인한다."
+  },
+  {
+    "name": "Shopify Payments",
+    "hasPayment": true,
+    "accountRequired": true,
+    "officialUrl": "https://www.shopify.com/payments",
+    "bestFor": "브랜드 스토어와 다상품 판매",
+    "setupSteps": [
+      "Shopify 가입",
+      "결제 활성화",
+      "상품/배송 없는 디지털 설정",
+      "테스트 주문"
+    ],
+    "caveat": "국가별 Shopify Payments 지원 여부 확인."
+  }
+]

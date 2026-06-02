@@ -1,0 +1,21 @@
+﻿HTTP UTF-8 QA started 2026-06-02T14:07:21.6804441+09:00
+serverPid=13900
+service_002_app_team_analytics/index.html status=200 bytes=3748 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_002_app_team_analytics/manifest.json status=200 bytes=2358 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_003_franchise_automation/index.html status=200 bytes=3720 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_003_franchise_automation/manifest.json status=200 bytes=2364 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_004_franchise_analytics/index.html status=200 bytes=3754 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_004_franchise_analytics/manifest.json status=200 bytes=2364 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_005_saas_crm/index.html status=200 bytes=3591 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_005_saas_crm/manifest.json status=200 bytes=2192 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_006_wholesale_automation/index.html status=200 bytes=3714 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_006_wholesale_automation/manifest.json status=200 bytes=2358 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_007_marketing_agency_internal_tools/index.html status=200 bytes=3636 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_007_marketing_agency_internal_tools/manifest.json status=200 bytes=2235 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_008_lawyer_analytics/index.html status=200 bytes=3736 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_008_lawyer_analytics/manifest.json status=200 bytes=2346 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_009_hospital_automation/index.html status=200 bytes=3693 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_009_hospital_automation/manifest.json status=200 bytes=2337 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_010_hospital_analytics/index.html status=200 bytes=3728 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_010_hospital_analytics/manifest.json status=200 bytes=2338 paymentPlaceholder=True ownerCaveat=True badGuarantee=False
+service_002_010_index.html status=200 bytes=2203 ownerCaveat=True

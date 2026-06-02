@@ -1,0 +1,2 @@
+PASS Edge QA service001 screenshot=C:\Users\Daeryun\Desktop\홈페이지 자료정보\.omo\start-work\service_001_edge.png bytes=175898 cleanup_pending pid=22484 profile=C:\Users\Daeryun\AppData\Local\Temp\edge-service001-864d715c538a4f61a3490a6811c88555
+cleanup: stopped python http.server pid=22484; alive_after_stop=False; removed_edge_profile=True

@@ -1,0 +1,2 @@
+PASS HTTP QA service001 manifest=001 cleanup_pending pid=14232
+cleanup: stopped python http.server pid=14232; alive_after_stop=False

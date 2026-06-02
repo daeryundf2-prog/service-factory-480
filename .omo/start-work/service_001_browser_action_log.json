@@ -1,0 +1,7 @@
+{
+    "browser":  "Microsoft Edge headless",
+    "url":  "http://127.0.0.1:8812/service_factory/service_001_saas_analytics/index.html",
+    "screenshot":  "C:\\Users\\Daeryun\\Desktop\\홈페이지 자료정보\\.omo\\start-work\\service_001_edge.png",
+    "screenshotBytes":  175898,
+    "pass":  true
+}

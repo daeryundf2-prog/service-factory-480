@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaaS 예약 시스템 서비스</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, "Malgun Gothic", sans-serif; background: #f5f7f4; color: #182027; }
+    body { margin: 0; }
+    main { max-width: 1040px; margin: 0 auto; padding: 40px 20px 56px; }
+    .hero { display: grid; gap: 24px; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); align-items: stretch; }
+    section, aside { background: #fff; border: 1px solid #d9ded6; border-radius: 8px; padding: 24px; box-shadow: 0 8px 24px rgba(24,32,39,.06); }
+    h1 { font-size: 34px; line-height: 1.18; margin: 0 0 14px; letter-spacing: 0; }
+    h2 { font-size: 19px; margin: 0 0 12px; letter-spacing: 0; }
+    p { line-height: 1.65; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .meta span { border: 1px solid #cbd4c5; border-radius: 999px; padding: 7px 10px; font-size: 13px; background: #f8faf6; }
+    .price { font-size: 24px; font-weight: 700; margin: 10px 0 16px; }
+    a.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 6px; background: #1f6f5b; color: white; text-decoration: none; font-weight: 700; }
+    ul, ol { padding-left: 22px; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+    .note { border-left: 4px solid #b85b38; background: #fff6ef; padding: 14px 16px; border-radius: 6px; }
+    @media (max-width: 780px) { .hero, .grid { grid-template-columns: 1fr; } h1 { font-size: 28px; } main { padding-top: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <section>
+        <p>Service 016 · booking · Rank 16</p>
+        <h1>SaaS 예약 시스템 서비스</h1>
+        <p>Cal.com 또는 로컬 도구를 활용해 SaaS의 예약 시스템 흐름을 세팅하고 운영 문서까지 납품한다.</p>
+        <div class="meta">
+          <span>플랫폼: Stripe Payment Links</span>
+          <span>결제: Stripe Payment Links</span>
+          <span>채널: android-apple-companion</span>
+          <span>원본 ID: svc-354</span>
+        </div>
+        <p class="price">₩500,000 setup + ₩120,000/mo</p>
+        <a class="button" href="PAYMENT_LINK_HERE">결제 링크 연결</a>
+        <p class="note">실제 결제는 사용자 소유 계정의 Stripe, Paddle, Gumroad, Payhip 링크로만 받습니다. 이 페이지는 출시 준비용 템플릿이며 수익을 보장하지 않습니다.</p>
+      </section>
+      <aside>
+        <h2>필수 보강</h2>
+        <p>예약 변경/취소 규칙, 노쇼 방지 메시지, 캘린더 충돌 테스트를 추가한다.</p>
+        <h2>주의할 약점</h2>
+        <p>캘린더 충돌, 노쇼 정책, 예약 변경 플로우가 없으면 현장 혼란이 생긴다.</p>
+      </aside>
+    </div>
+    <div class="grid">
+      <section><h2>납품물</h2><ul><li>예약 변경/취소 규칙</li>
+<li>노쇼 방지 메시지</li>
+<li>캘린더 충돌 테스트</li>
+<li>예약 폼 구성표</li>
+<li>담당자 알림 흐름도</li>
+<li>운영 인수인계 체크리스트</li></ul></section>
+      <section><h2>작업 흐름</h2><ol><li>예약 가능 시간, 담당자, 변경/취소 마감 시간을 정의한다.</li>
+<li>캘린더 연동과 충돌 방지 테스트를 먼저 진행한다.</li>
+<li>노쇼 방지 메시지와 예약 변경 알림을 세팅한다.</li>
+<li>고객 담당자에게 예약 수정, 취소, 예외 처리 절차를 인수인계한다.</li></ol></section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>480 서비스 전체 리뷰</title>
+  <style>
+    :root{--ink:#101615;--muted:#5c6863;--paper:#f6f7ef;--panel:#fff;--line:#d7ded6;--green:#17633f;--navy:#10261f;--gold:#c2862d;--red:#b64252}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,rgba(23,99,63,.12),transparent 34%),linear-gradient(315deg,rgba(194,134,45,.14),transparent 42%),var(--paper);color:var(--ink);font-family:"Segoe UI","Malgun Gothic",sans-serif}main{width:min(1320px,calc(100% - 32px));margin:0 auto;padding:30px 0 60px}header,.toolbar,.card,.panel{border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.94);box-shadow:0 18px 46px rgba(18,38,32,.12)}header{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;margin-bottom:14px;padding:30px}.eyebrow{margin:0 0 10px;color:var(--red);font-weight:900}h1{margin:0;font-size:clamp(38px,7vw,84px);line-height:.96;letter-spacing:0}.stat{background:var(--navy);color:white;border-radius:8px;padding:20px}.stat strong{display:block;color:#f2c15c;font-size:48px}.lead,p{color:var(--muted);line-height:1.52}.toolbar{position:sticky;top:0;z-index:4;display:grid;grid-template-columns:1fr repeat(3,160px);gap:10px;padding:12px;margin-bottom:14px}input,select{min-height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:white;font-size:15px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card{padding:15px;display:grid;gap:8px;min-height:320px}.meta{display:flex;flex-wrap:wrap;gap:6px}.pill{border-radius:999px;padding:4px 8px;font-size:11px;font-weight:900;background:rgba(23,99,63,.12);color:var(--green)}.tier-A{background:#10261f;color:#f2c15c}.tier-B{background:#eaf3ec}.tier-C{background:#fff4da;color:#80530d}.tier-D{background:#fde8e8;color:#9b2735}h2{margin:0;font-size:18px}.score{font-size:28px;font-weight:900;color:var(--gold)}.panel{margin-top:14px;padding:18px}.matrix{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.mini{border:1px solid var(--line);border-radius:8px;background:white;padding:12px}.empty{grid-column:1/-1;text-align:center;padding:28px;color:var(--muted);border:1px dashed var(--line);border-radius:8px}@media(max-width:1100px){header,.toolbar,.grid,.matrix{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <section>
+      <p class="eyebrow">480 service audit, ranking, payment, platform strategy</p>
+      <h1>480개 서비스 전체 리뷰</h1>
+      <p class="lead">480개 후보를 점수화하고, 부족점과 필요한 보강, 결제 형태, 웹·안드로이드·애플·인터넷 서비스 전략을 한 화면에 정리했습니다.</p>
+    </section>
+    <aside class="stat"><strong id="visible-count">480</strong><span>보이는 후보 수. A티어부터 판매하고, 앱 결제는 Google Play Billing / Apple In-App Purchase 정책을 분리합니다.</span></aside>
+  </header>
+  <section class="toolbar">
+    <input id="review-search" type="search" placeholder="서비스, 업종, 플랫폼, 결제, 부족점 검색">
+    <select id="tier-filter"><option value="all">전체 티어</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+    <select id="channel-filter"><option value="all">전체 채널</option></select>
+    <select id="platform-filter"><option value="all">전체 플랫폼</option></select>
+  </section>
+  <section id="review-grid" class="grid" aria-live="polite"></section>
+  <section class="panel"><h2>결제 형태</h2><div id="payment-forms" class="matrix"></div></section>
+  <section class="panel"><h2>플랫폼 채널 전략</h2><div id="channel-strategy" class="matrix"></div></section>
+  <section class="panel"><h2>부족한 점 보강</h2><div id="gap-list" class="matrix"></div></section>
+</main>
+<script>
+const state={review:[],gaps:[],payments:[],strategy:[],q:"",tier:"all",channel:"all",platform:"all"};
+const $=s=>document.querySelector(s), grid=$("#review-grid"), count=$("#visible-count"), search=$("#review-search"), tier=$("#tier-filter"), channel=$("#channel-filter"), platform=$("#platform-filter");
+const params=new URLSearchParams(location.search); state.q=params.get("q")||""; state.tier=params.get("tier")||"all"; state.platform=params.get("platform")||"all"; search.value=state.q; tier.value=state.tier; platform.value=state.platform;
+const uniq=(items,key)=>[...new Set(items.map(x=>x[key]))].sort();
+const option=v=>`<option value="${v}">${v}</option>`;
+const sync=()=>{const n=new URLSearchParams(); if(state.q)n.set("q",state.q); if(state.tier!=="all")n.set("tier",state.tier); if(state.channel!=="all")n.set("channel",state.channel); if(state.platform!=="all")n.set("platform",state.platform); history.replaceState(null,"",`${location.pathname}?${n.toString()}`)};
+function render(){
+ const q=state.q.toLowerCase();
+ const visible=state.review.filter(x=>(state.tier==="all"||x.tier===state.tier)&&(state.channel==="all"||x.recommendedChannel===state.channel)&&(state.platform==="all"||x.platform===state.platform)&&Object.values(x).join(" ").toLowerCase().includes(q));
+ count.textContent=String(visible.length);
+ grid.innerHTML=visible.length?visible.slice(0,120).map(x=>`<article class="card"><div class="meta"><span class="pill tier-${x.tier}">${x.tier}티어</span><span class="pill">#${x.rank}</span><span class="pill">${x.recommendedChannel}</span></div><h2>${x.name}</h2><div class="score">${x.score}점</div><p><b>플랫폼:</b> ${x.platform}</p><p><b>결제:</b> ${x.paymentSystem}</p><p><b>부족:</b> ${x.weakness}</p><p><b>추가:</b> ${x.requiredAddition}</p></article>`).join(""):`<div class="empty">검색 결과가 없습니다.</div>`;
+}
+function renderMeta(){
+ $("#payment-forms").innerHTML=state.payments.map(x=>`<div class="mini"><b>${x.name}</b><p>${x.channel}</p><p>${x.whenToUse}</p><p>${x.caveat}</p></div>`).join("");
+ $("#channel-strategy").innerHTML=state.strategy.map(x=>`<div class="mini"><b>${x.channel}</b><p>${x.bestFor}</p><p>${x.payment}</p><p>${x.caveat}</p></div>`).join("");
+ $("#gap-list").innerHTML=state.gaps.slice(0,16).map(x=>`<div class="mini"><b>${x.title}</b><p>${x.category}</p><p>${x.fix}</p></div>`).join("");
+}
+[search,tier,channel,platform].forEach(el=>el.addEventListener("input",e=>{state.q=search.value; state.tier=tier.value; state.channel=channel.value; state.platform=platform.value; sync(); render()}));
+Promise.all([fetch("service_review_480.json").then(r=>r.json()),fetch("service_gap_additions.json").then(r=>r.json()),fetch("payment_forms.json").then(r=>r.json()),fetch("platform_channel_strategy.json").then(r=>r.json())]).then(([review,gaps,payments,strategy])=>{state.review=review;state.gaps=gaps;state.payments=payments;state.strategy=strategy;channel.innerHTML+=uniq(review,"recommendedChannel").map(option).join("");platform.innerHTML+=uniq(review,"platform").map(option).join("");channel.value=state.channel;platform.value=state.platform;render();renderMeta()});
+</script>
+</body>
+</html>

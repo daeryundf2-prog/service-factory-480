@@ -1,0 +1,274 @@
+﻿HTTP curl QA started 2026-06-02T15:22:57.1077926+09:00
+serverPid=24596
+invocation=curl.exe -sS -i http://127.0.0.1:8830/<service>/<file>
+--- service_011_tax_accountant_analytics/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3739
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3252
+--- service_011_tax_accountant_analytics/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2347
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "011",
+  "sourceServiceId": "svc-112",
+  "rank": 11,
+  "name": "세무사 분석 대시보드 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1629
+--- service_012_shopping_mall_internal_tools/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3609
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3188
+--- service_012_shopping_mall_internal_tools/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2206
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "012",
+  "sourceServiceId": "svc-213",
+  "rank": 12,
+  "name": "쇼핑몰 내부 운영툴 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1554
+--- service_013_web_agency_internal_tools/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3627
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3194
+--- service_013_web_agency_internal_tools/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2224
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "013",
+  "sourceServiceId": "svc-393",
+  "rank": 13,
+  "name": "웹에이전시 내부 운영툴 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1560
+--- service_014_dental_analytics/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3730
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3249
+--- service_014_dental_analytics/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2338
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "014",
+  "sourceServiceId": "svc-016",
+  "rank": 14,
+  "name": "치과 분석 대시보드 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1626
+--- service_015_franchise_crm/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3627
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3208
+--- service_015_franchise_crm/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2226
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "015",
+  "sourceServiceId": "svc-254",
+  "rank": 15,
+  "name": "프랜차이즈 CRM 세팅 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1570
+--- service_016_saas_booking/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3728
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3265
+--- service_016_saas_booking/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: application/json
+Content-Length: 2358
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "016",
+  "sourceServiceId": "svc-354",
+  "rank": 16,
+  "name": "SaaS 예약 시스템 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1650
+--- service_017_wholesale_crm/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:57 GMT
+Content-type: text/html
+Content-Length: 3621
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3208
+--- service_017_wholesale_crm/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: application/json
+Content-Length: 2220
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "017",
+  "sourceServiceId": "svc-242",
+  "rank": 17,
+  "name": "도매 유통 CRM 세팅 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1570
+--- service_018_lawyer_crm/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: text/html
+Content-Length: 3609
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3202
+--- service_018_lawyer_crm/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: application/json
+Content-Length: 2208
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "018",
+  "sourceServiceId": "svc-098",
+  "rank": 18,
+  "name": "변호사 CRM 세팅 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1564
+--- service_019_hospital_crm/index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: text/html
+Content-Length: 3600
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=3199
+--- service_019_hospital_crm/manifest.json ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: application/json
+Content-Length: 2199
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+{
+  "serviceNumber": "019",
+  "sourceServiceId": "svc-002",
+  "rank": 19,
+  "name": "병원 CRM 세팅 서비스",
+RESULT statusOk=True paymentPlaceholder=True ownerCaveat=True badGuarantee=False bytes=1561
+--- service_011_019_index.html ---
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.8
+Date: Tue, 02 Jun 2026 06:22:58 GMT
+Content-type: text/html
+Content-Length: 2137
+Last-Modified: Tue, 02 Jun 2026 06:21:00 GMT
+
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>서비스 011-019 출시 키트</title><style>body{font-family:Arial,"Malgun Gothic",sans-serif;margin:0;background:#f5f7f4;color:#182027}main{max-width:960px;margin:auto;padding:32px 20px}h1{font-size:30px}li{margin:10px 0;line-height:1.6}a{color:#1f6f5b;font-weight:700}.note{background:#fff6ef;border-left:4px solid #b85b38;padding:14px;border-radius:6px}</style></head>
+<body><main><h1>서비스 011-019 출시 키트</h1><p class="note">실제 결제는 사용자 소유 계정에서 발급한 링크로 교체해야 하며 수익을 보장하지 않습니다.</p><ol><li><a href="service_011_tax_accountant_analytics/index.html">011. 세무사 분석 대시보드 서비스</a> · Stripe Payment Links · ₩600,000 setup + ₩180,000/mo</li>
+<li><a href="service_012_shopping_mall_internal_tools/index.html">012. 쇼핑몰 내부 운영툴 서비스</a> · Paddle · ₩1,200,000 setup + ₩350,000/mo</li>
+<li><a href="service_013_web_agency_internal_tools/index.html">013. 웹에이전시 내부 운영툴 서비스</a> · Paddle · ₩1,200,000 setup + ₩350,000/mo</li>
+<li><a href="service_014_dental_analytics/index.html">014. 치과 분석 대시보드 서비스</a> · Stripe Payment Links · ₩600,000 setup + ₩180,000/mo</li>
+<li><a href="service_015_franchise_crm/index.html">015. 프랜차이즈 CRM 세팅 서비스</a> · Payhip · ₩900,000 setup + ₩250,000/mo</li>
+<li><a href="service_016_saas_booking/index.html">016. SaaS 예약 시스템 서비스</a> · Stripe Payment Links · ₩500,000 setup + ₩120,000/mo</li>
+RESULT statusOk=True ownerCaveat=True bytes=1982
+cleanup: killed python http.server pid 24596

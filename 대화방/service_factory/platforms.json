@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Gumroad",
+    "priority": "primary",
+    "officialUrl": "https://gumroad.com/",
+    "bestFor": "1달러 템플릿, 문서, ZIP 디지털 상품",
+    "paymentFit": "내장 결제와 파일 전달이 있어 첫 상품 판매에 빠르다.",
+    "setup": [
+      "상품 생성",
+      "ZIP 업로드",
+      "가격 설정",
+      "상품 링크 공유"
+    ],
+    "caveat": "플랫폼 수수료와 정산 조건은 게시 전 최신 정책을 확인한다."
+  },
+  {
+    "name": "Ko-fi",
+    "priority": "primary",
+    "officialUrl": "https://ko-fi.com/shop",
+    "bestFor": "소액 후원, 디지털 파일, 커미션형 서비스",
+    "paymentFit": "Shop 상품과 후원 결제를 연결하기 쉽다.",
+    "setup": [
+      "Shop 열기",
+      "Digital file 선택",
+      "상품 설명 입력",
+      "PayPal 또는 Stripe 연결"
+    ],
+    "caveat": "지원 국가와 결제 계정 연결 가능 여부를 확인한다."
+  },
+  {
+    "name": "Payhip",
+    "priority": "primary",
+    "officialUrl": "https://payhip.com/features/sell-digital-downloads",
+    "bestFor": "디지털 다운로드와 간단한 스토어",
+    "paymentFit": "Stripe/PayPal 등 게이트웨이를 연결해 다운로드 상품을 판다.",
+    "setup": [
+      "Digital product 추가",
+      "파일 업로드",
+      "가격 설정",
+      "게이트웨이 연결"
+    ],
+    "caveat": "다운로드 제한, 세금, 쿠폰 설정을 확인한다."
+  },
+  {
+    "name": "Stripe Payment Links",
+    "priority": "primary",
+    "officialUrl": "https://docs.stripe.com/payment-links",
+    "bestFor": "서비스 착수금, 월 유지보수, 링크 결제",
+    "paymentFit": "코드 없이 Stripe-hosted 결제 링크를 만들 수 있다.",
+    "setup": [
+      "Stripe 계정 생성",
+      "상품/가격 생성",
+      "Payment Link 생성",
+      "카탈로그 CTA에 삽입"
+    ],
+    "caveat": "사업자/정산/KYC는 사용자 계정으로 완료해야 한다."
+  },
+  {
+    "name": "Paddle",
+    "priority": "primary",
+    "officialUrl": "https://developer.paddle.com/get-started/how-paddle-works/digital-products",
+    "bestFor": "글로벌 SaaS, 소프트웨어, 고가 디지털 상품",
+    "paymentFit": "Merchant of Record로 세금/결제/영수증 부담을 줄인다.",
+    "setup": [
+      "Paddle 계정",
+      "상품/가격",
+      "Checkout",
+      "웹훅/납품 연결"
+    ],
+    "caveat": "승인/심사와 지원 상품 범위를 확인한다."
+  },
+  {
+    "name": "Lemon Squeezy",
+    "priority": "secondary",
+    "officialUrl": "https://www.lemonsqueezy.com/ecommerce/digital-products",
+    "bestFor": "소프트웨어 라이선스, 다운로드, 구독",
+    "paymentFit": "상점, 라이선스, 체크아웃을 함께 제공한다.",
+    "setup": [
+      "스토어 생성",
+      "상품 등록",
+      "라이선스/파일 설정",
+      "체크아웃 링크 연결"
+    ],
+    "caveat": "계정 승인과 서비스 가능 지역을 확인한다."
+  },
+  {
+    "name": "크몽",
+    "priority": "primary",
+    "officialUrl": "https://kmong.com/",
+    "bestFor": "한국어 서비스 대행, 설치, 자동화 세팅",
+    "paymentFit": "플랫폼 내 결제/거래 중재가 있어 한국 고객에게 유리하다.",
+    "setup": [
+      "전문가 프로필",
+      "서비스 상품",
+      "가격 옵션",
+      "포트폴리오 등록"
+    ],
+    "caveat": "수수료와 금지 서비스 정책을 확인한다."
+  },
+  {
+    "name": "숨고",
+    "priority": "secondary",
+    "officialUrl": "https://soomgo.com/",
+    "bestFor": "지역 서비스, 설치 대행, 컨설팅 리드",
+    "paymentFit": "리드 매칭 후 플랫폼 또는 별도 계약으로 진행한다.",
+    "setup": [
+      "고수 프로필",
+      "서비스 지역",
+      "견적 템플릿",
+      "응답 문구"
+    ],
+    "caveat": "리드 비용과 플랫폼 규칙을 확인한다."
+  },
+  {
+    "name": "네이버 스마트스토어",
+    "priority": "secondary",
+    "officialUrl": "https://sell.smartstore.naver.com/",
+    "bestFor": "한국어 디지털 템플릿과 서비스 패키지 노출",
+    "paymentFit": "네이버 생태계 결제를 활용할 수 있다.",
+    "setup": [
+      "판매자 가입",
+      "상품 등록",
+      "상세페이지",
+      "정산 정보"
+    ],
+    "caveat": "디지털 상품/서비스 판매 가능 범위 확인이 필요하다."
+  },
+  {
+    "name": "Shopify",
+    "priority": "specialized",
+    "officialUrl": "https://www.shopify.com/",
+    "bestFor": "브랜드형 서비스 스토어와 고가 패키지",
+    "paymentFit": "스토어, 결제, 앱 생태계를 활용한다.",
+    "setup": [
+      "스토어 생성",
+      "디지털 상품 앱",
+      "결제 설정",
+      "랜딩 구성"
+    ],
+    "caveat": "월 비용과 앱 비용이 있어 초기에는 과할 수 있다."
+  },
+  {
+    "name": "WordPress + WooCommerce",
+    "priority": "specialized",
+    "officialUrl": "https://woocommerce.com/",
+    "bestFor": "자체 사이트에서 서비스/다운로드 판매",
+    "paymentFit": "WooCommerce 결제 플러그인으로 직접 판매한다.",
+    "setup": [
+      "호스팅",
+      "WooCommerce",
+      "결제 플러그인",
+      "상품 등록"
+    ],
+    "caveat": "보안/업데이트/백업 책임이 커진다."
+  },
+  {
+    "name": "GitHub Sponsors",
+    "priority": "specialized",
+    "officialUrl": "https://github.com/sponsors",
+    "bestFor": "오픈소스 템플릿, 개발자 도구, 후원형 수익",
+    "paymentFit": "후원 기반이라 직접 상품 결제보다 커뮤니티형에 맞다.",
+    "setup": [
+      "프로필 준비",
+      "후원 티어",
+      "README CTA",
+      "샘플 repo"
+    ],
+    "caveat": "일반 서비스 판매보다는 개발자 신뢰 구축용이다."
+  }
+]

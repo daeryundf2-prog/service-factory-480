@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "active_work_id": "480-service-numbered-plan",
+  "works": {
+    "480-service-numbered-plan": {
+      "work_id": "480-service-numbered-plan",
+      "active_plan": "plans/480_service_numbered_plan.md",
+      "plan_name": "480_service_numbered_plan",
+      "session_ids": [
+        "codex:019e7cbd-b987-79f3-b30d-19c40e03803f"
+      ],
+      "status": "active",
+      "worktree_path": null,
+      "current_service": "020"
+    }
+  }
+}

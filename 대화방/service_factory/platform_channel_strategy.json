@@ -1,0 +1,37 @@
+[
+  {
+    "channel": "web",
+    "bestFor": "가장 빠른 MVP, SEO, B2B 서비스, 디지털 상품",
+    "payment": "Stripe Payment Links, Paddle, Lemon Squeezy, Gumroad, Payhip",
+    "buildPath": "정적 카탈로그 → 결제 링크 → 납품 ZIP/온보딩 폼 → 월 유지보수",
+    "caveat": "실제 결제 링크는 사용자 소유 계정에서 생성한다."
+  },
+  {
+    "channel": "android",
+    "bestFor": "현장 직원용 앱, 고객 확인 앱, 예약/상담 companion app",
+    "payment": "Google Play Billing for in-app digital goods; external payment only for eligible outside-app goods/services",
+    "buildPath": "웹 서비스 먼저 검증 → Android companion app → Play Console 정책 확인 → Billing 또는 외부 결제 분리",
+    "caveat": "Google Play 배포 앱의 인앱 디지털 기능/콘텐츠 결제는 Google Play Billing 정책을 우선 검토한다."
+  },
+  {
+    "channel": "apple",
+    "bestFor": "iPhone 고객 앱, 예약/상담 companion app, 프리미엄 기능",
+    "payment": "Apple In-App Purchase / StoreKit for in-app digital goods; Apple Pay or web payment only where guidelines allow",
+    "buildPath": "웹 결제 검증 → iOS companion app → App Store Review Guidelines 3.1 검토 → StoreKit/IAP 설계",
+    "caveat": "iOS 앱 안에서 소비되는 디지털 콘텐츠/기능/구독은 Apple In-App Purchase가 필요할 수 있다."
+  },
+  {
+    "channel": "internet-service",
+    "bestFor": "SaaS, API, 자동화, 웹 대시보드, 월 구독",
+    "payment": "Stripe Subscription, Paddle Subscription, Lemon Squeezy Subscription",
+    "buildPath": "로그인 없는 MVP → 고객별 워크스페이스 → 구독/인보이스 → 운영 모니터링",
+    "caveat": "개인정보, 데이터 보관, 장애 대응 SLA를 계약에 포함한다."
+  },
+  {
+    "channel": "marketplace",
+    "bestFor": "초기 수요 검증, 한국어 대행, 디지털 템플릿",
+    "payment": "Gumroad, Ko-fi, Payhip, 크몽, 숨고, 네이버 스마트스토어",
+    "buildPath": "상품 페이지 → 샘플 이미지 → 고정가 패키지 → 후기 수집 → 자체 웹 전환",
+    "caveat": "플랫폼 수수료, 금지 서비스, 정산 주기, 환불 정책을 확인한다."
+  }
+]
