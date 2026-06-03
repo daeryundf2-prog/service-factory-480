@@ -1,0 +1,33 @@
+{
+  "serviceNumber": "000",
+  "sourceServiceId": "",
+  "name": "Accounting Analytics Setup",
+  "brand": "Accounting Analytics Setup",
+  "tier": "B",
+  "score": 80,
+  "category": "analytics",
+  "niche": "Accounting",
+  "recommendedChannel": "web-service",
+  "platform": {
+    "primary": "Stripe Payment Links"
+  },
+  "payment": {
+    "primary": "Stripe Payment Links"
+  },
+  "priceAnchor": "$399 setup + $99/mo maintenance",
+  "currency": "USD",
+  "language": "en",
+  "targetMarket": "global",
+  "weakness": "Without proper data source quality, reports become number listings.",
+  "requiredAddition": "Event dictionary, data quality checklist, monthly report template.",
+  "deliverables": [
+    "KPI Discovery Session (60 min call)",
+    "Event Tracking Dictionary",
+    "Full Metabase Dashboard (8+ charts)",
+    "Data Quality Checklist",
+    "Monthly Report Template",
+    "Handover Documentation"
+  ],
+  "deliveryTimeline": "5 business days",
+  "refundPolicy": "Full refund within 7 business days if deliverables are not met as described."
+}
