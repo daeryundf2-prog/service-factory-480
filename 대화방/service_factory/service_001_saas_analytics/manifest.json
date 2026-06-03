@@ -1,0 +1,47 @@
+{
+  "serviceNumber": "001",
+  "sourceServiceId": "svc-352",
+  "name": "SaaS Analytics Dashboard Setup",
+  "brand": "MetricSetup",
+  "tier": "A",
+  "score": 94,
+  "category": "analytics",
+  "niche": "SaaS",
+  "recommendedChannel": "web-service",
+  "platform": {
+    "primary": "Stripe Payment Links",
+    "secondary": "Paddle"
+  },
+  "payment": {
+    "primary": "Stripe Payment Links",
+    "subscription": "Stripe Subscription"
+  },
+  "priceAnchor": "$399 setup + $99/mo maintenance",
+  "currency": "USD",
+  "language": "en",
+  "targetMarket": "global",
+  "targetAudience": "SaaS founders, growth leads, $10K-$100K MRR",
+  "weakness": "Without data source quality and conversion event definitions, reports become number listings.",
+  "requiredAddition": "Conversion event dictionary, data quality checklist, monthly report template.",
+  "deliverables": [
+    "KPI Discovery Session (60 min call)",
+    "Event Tracking Dictionary",
+    "Full Metabase Dashboard (8+ charts)",
+    "Data Quality Checklist",
+    "Monthly Report Template",
+    "Handover Documentation"
+  ],
+  "deliveryTimeline": "5 business days",
+  "refundPolicy": "Full refund within 7 business days if deliverables are not met as described.",
+  "qaChecklist": [
+    "demo dashboard opens",
+    "payment placeholder replaced by user-owned Stripe link",
+    "refund wording present and consistent",
+    "event dictionary has at least 8 events",
+    "data quality checklist completed",
+    "monthly report template attached",
+    "no revenue guarantee wording",
+    "privacy policy linked in footer",
+    "terms of service linked in footer"
+  ]
+}
