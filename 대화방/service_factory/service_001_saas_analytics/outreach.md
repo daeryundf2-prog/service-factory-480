@@ -1,17 +1,69 @@
-# SaaS 분석 대시보드 영업문구
+# MetricSetup — Outreach Templates
 
-## 첫 제안
-안녕하세요. SaaS에서 가입, 활성화, 결제, 이탈 지표를 한 화면에서 보기 어렵다면 첫 분석 대시보드를 작게 세팅해드릴 수 있습니다.
+---
 
-## 짧은 메시지
-지금 데이터가 완벽하지 않아도 괜찮습니다. 먼저 전환 이벤트 사전을 만들고, 샘플 데이터로 Metabase, Umami, Plausible 중 맞는 구조를 잡아 월간 리포트까지 이어지게 만들겠습니다.
+## Template 1: Cold Outbound
 
-## 진단 질문
-1. 지금 가장 중요하게 보는 지표는 무엇인가요?
-2. 가입부터 결제까지 어떤 이벤트를 기록하고 있나요?
-3. 월간 보고서를 만드는 데 몇 시간이 걸리나요?
-4. 이탈 원인을 어디서 확인하고 있나요?
-5. 결제 데이터와 제품 사용 데이터가 연결되어 있나요?
+**Subject line:** Quick question about your SaaS metrics at [Company Name]
 
-## 후속 제안
-첫 대시보드가 작동하면 다음 달에는 실험 지표, 코호트, 이탈 위험 신호까지 추가할 수 있습니다.
+Hi [First Name],
+
+I noticed [Company Name] recently [specific observation — e.g., "hit Product Hunt's front page," "expanded into the EU market," "launched a new pricing tier"]. Impressive trajectory for a company at your stage.
+
+Most SaaS teams between $10K and $100K MRR hit the same wall: signups, activations, payments, and churn each live in separate tools, so nobody can see the full funnel in one place.
+
+MetricSetup builds your first analytics dashboard — conversion event dictionary, data pipeline, and weekly report template — in under two weeks using tools you likely already have.
+
+Would a 15-minute diagnosis call be worth your time? No pitch deck, no commitment. Just a clear read on where your data gaps are and whether closing them would move the numbers you care about.
+
+Best,
+[Your Name]
+Founder, MetricSetup
+[Email] | [Phone]
+
+---
+
+## Template 2: Warm Inbound
+
+Hi [First Name],
+
+Thanks for getting back to me. Glad the MetricSetup approach resonates.
+
+Here is what the engagement covers:
+
+- A conversion event dictionary mapped to your actual funnel stages.
+- A working dashboard in Metabase, Umami, or Plausible — whichever fits your stack.
+- A weekly report template your team can run without analyst involvement.
+- Handoff documentation so nothing depends on us after delivery.
+
+Most teams see the first live dashboard within ten days of our kickoff call.
+
+If the timing works, the next step is a 30-minute scoping call where we review your current data and agree on scope. You can book directly here:
+
+[Insert calendar link]
+
+Looking forward to it.
+
+Best,
+[Your Name]
+Founder, MetricSetup
+[Email] | [Phone]
+
+---
+
+## Template 3: Follow-up (3-5 Days, No Reply)
+
+Hi [First Name],
+
+Circling back once. No pressure — just wanted to share something that might be useful regardless.
+
+We recently helped a B2B SaaS company at a similar stage discover that 38% of their signups never reached the activation milestone they assumed was healthy. They had been optimizing pricing when the real lever was onboarding. The fix took less than a week once the data was visible.
+
+Happy to do a quick scan of your funnel setup and tell you whether there is a gap worth addressing — 15 minutes, no strings.
+
+If the timing is not right, no worries at all. I will stay out of your inbox.
+
+Best,
+[Your Name]
+Founder, MetricSetup
+[Email] | [Phone]

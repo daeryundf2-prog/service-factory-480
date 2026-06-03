@@ -1,7 +1,8 @@
 {
   "serviceNumber": "001",
   "sourceServiceId": "svc-352",
-  "name": "SaaS 분석 대시보드 서비스",
+  "name": "SaaS Analytics Dashboard Setup",
+  "brand": "MetricSetup",
   "tier": "A",
   "score": 94,
   "category": "analytics",
@@ -9,33 +10,38 @@
   "recommendedChannel": "web-service",
   "platform": {
     "primary": "Stripe Payment Links",
-    "secondary": "Paddle",
-    "fallback": "계좌이체 + 세금계산서"
+    "secondary": "Paddle"
   },
   "payment": {
     "primary": "Stripe Payment Links",
-    "subscription": "Stripe Subscription",
-    "global": "Paddle Subscription"
+    "subscription": "Stripe Subscription"
   },
-  "priceAnchor": "₩600,000 setup + ₩180,000/mo",
-  "weakness": "데이터 원천 품질과 전환 이벤트 정의가 없으면 보고서가 숫자 나열로 끝난다.",
-  "requiredAddition": "전환 이벤트 사전, 데이터 품질 점검표, 월간 리포트 템플릿을 추가한다.",
+  "priceAnchor": "$399 setup + $99/mo maintenance",
+  "currency": "USD",
+  "language": "en",
+  "targetMarket": "global",
+  "targetAudience": "SaaS founders, growth leads, $10K-$100K MRR",
+  "weakness": "Without data source quality and conversion event definitions, reports become number listings.",
+  "requiredAddition": "Conversion event dictionary, data quality checklist, monthly report template.",
   "deliverables": [
-    "SaaS KPI discovery worksheet",
-    "conversion event dictionary",
-    "data quality checklist",
-    "Metabase, Umami, or Plausible dashboard plan",
-    "monthly report template",
-    "handoff and maintenance checklist",
-    "payment and refund caveat copy"
+    "KPI Discovery Session (60 min call)",
+    "Event Tracking Dictionary",
+    "Full Metabase Dashboard (8+ charts)",
+    "Data Quality Checklist",
+    "Monthly Report Template",
+    "Handover Documentation"
   ],
+  "deliveryTimeline": "5 business days",
+  "refundPolicy": "Full refund within 7 business days if deliverables are not met as described.",
   "qaChecklist": [
     "demo dashboard opens",
-    "payment placeholder replaced by user-owned link",
-    "refund wording present",
+    "payment placeholder replaced by user-owned Stripe link",
+    "refund wording present and consistent",
     "event dictionary has at least 8 events",
     "data quality checklist completed",
     "monthly report template attached",
-    "no revenue guarantee wording"
+    "no revenue guarantee wording",
+    "privacy policy linked in footer",
+    "terms of service linked in footer"
   ]
 }

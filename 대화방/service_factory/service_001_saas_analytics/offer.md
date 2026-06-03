@@ -1,29 +1,86 @@
-# Service 001: SaaS 분석 대시보드 서비스
+# MetricSetup
 
-## 첫 제안
-SaaS 운영에서 가입, 활성화, 결제, 이탈 지표가 흩어져 있다면 이번 주 안에 첫 분석 대시보드를 세팅해드릴 수 있습니다. 목적은 매출을 보장하는 것이 아니라 의사결정에 필요한 전환 흐름을 보이게 만드는 것입니다.
+**Your SaaS metrics, finally in one place.**
 
-## 가격 기준
-- 초기 세팅: ₩600,000부터
-- 월 유지보수: ₩180,000부터
-- 글로벌 고객 또는 구독형 운영: Paddle 또는 Stripe Subscription 별도 검토
+---
 
-## 포함 범위
-- KPI discovery worksheet
-- 전환 이벤트 사전
-- 데이터 품질 점검표
-- Metabase, Umami, Plausible 중 1개 기반 대시보드 설계
-- 월간 리포트 템플릿
-- 인수인계와 유지보수 체크리스트
+## The Problem
 
-## 결제
-기본 결제는 Stripe Payment Links입니다. 실제 결제는 사용자 소유 계정에서 생성한 링크로만 가능합니다. Codex는 결제 계정을 만들거나 결제금을 수령하지 않습니다.
+You are running a SaaS product, but your numbers are scattered across Stripe, your database, Mixpanel, spreadsheets, and Slack messages. You do not have a single source of truth for activation, retention, revenue, or churn. Reporting takes hours every month, and you are never fully confident the numbers are right.
 
-## 환불 문구
-디지털 세팅/컨설팅 특성상 작업 착수 후 환불은 제한될 수 있습니다. 다만 약속한 산출물이 누락되거나 열리지 않는 경우 7일 이내 수정본을 제공합니다.
+This is the default state for most SaaS companies below Series A. MetricSetup fixes it.
 
-## 금지 표현
-- 수익 보장
-- 무조건 매출 증가
-- 자동으로 돈이 들어옴
-- 광고 없이 확정 수익
+---
+
+## What You Get
+
+**KPI Discovery Session (60 min call)**
+We walk through your product, user lifecycle, and business model. By the end of this call, we have a clear, agreed-upon set of 12-15 KPIs that actually matter for your stage.
+
+**Event Tracking Dictionary**
+A complete mapping of every event, property, and segment your dashboard requires. Your engineering team can implement this without guessing.
+
+**Full Metabase Dashboard (8+ charts)**
+A production-ready dashboard built on Metabase. Cohort analysis, revenue metrics, activation funnels, churn tracking, and LTV breakdowns -- all wired to your actual data source.
+
+**Data Quality Checklist**
+A structured checklist for validating that your tracked events are clean, complete, and consistent. This prevents the "numbers look wrong but I cannot tell why" problem.
+
+**Monthly Report Template**
+A repeatable template for your monthly business review. Pulls from the same data as your dashboard so there is no second source of drift.
+
+**Handover Documentation**
+Full documentation of every metric definition, data pipeline dependency, and dashboard configuration. You can maintain this yourself or hand it to any analytics hire.
+
+---
+
+## Pricing
+
+| Item | Price |
+|------|-------|
+| One-time setup (all deliverables above) | $399 |
+| Monthly maintenance (optional) | $99/month |
+
+Payment is processed via Stripe Payment Links. You pay from your own Stripe account -- no intermediary holds your funds.
+
+The optional monthly maintenance includes dashboard updates, data source changes, and up to 2 hours of support per month.
+
+---
+
+## Delivery Timeline
+
+All deliverables within **5 business days** of payment confirmation.
+
+Day 1-2: KPI Discovery Session, event tracking dictionary.
+Day 3-4: Dashboard build and data quality checklist.
+Day 5: Report template, handover documentation, final review call.
+
+---
+
+## Refund Policy
+
+Full refund within 7 days if deliverables are not met as described in this document. No fine print. If we fail to deliver what we promised, you get your money back.
+
+---
+
+## What We Do Not Promise
+
+We do not guarantee revenue increases. We do not claim your business will grow automatically. We do not promise specific ROI figures.
+
+What we deliver is clarity. A working dashboard, clean data definitions, and the ability to make decisions based on evidence instead of instinct. The outcomes depend on your product, your market, and your execution.
+
+---
+
+## Support
+
+7 days of post-delivery support is included. If something breaks, if a chart looks wrong, or if you need help interpreting a metric -- email us. We respond within one business day during the support window.
+
+---
+
+## Next Steps
+
+1. Click the payment link and complete checkout.
+2. You receive a calendar link for the KPI Discovery Session within 2 hours.
+3. We start building your dashboard the same day.
+
+Questions before you start? Reach out and we will clarify anything before you commit.
