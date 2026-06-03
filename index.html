@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetricSetup — SaaS Analytics Dashboard in 5 Days</title>
+  <meta name="description" content="Production-ready Metabase dashboard for your SaaS. Event tracking, conversion funnels, monthly reports. Delivered in 5 business days. $399.">
+  <meta property="og:title" content="MetricSetup — SaaS Analytics Dashboard in 5 Days">
+  <meta property="og:description" content="Stop guessing. Start measuring. Get a production-ready analytics dashboard for your SaaS.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0a">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --surface-2: #1c1c1c;
+      --border: #262626;
+      --text: #e5e5e5;
+      --text-muted: #a3a3a3;
+      --accent: #22c55e;
+      --accent-hover: #16a34a;
+      --accent-dim: rgba(34, 197, 94, 0.1);
+      --white: #fafafa;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.85); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); padding: 16px 0;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .nav-brand { font-weight: 700; font-size: 18px; color: var(--white); letter-spacing: -0.5px; }
+    .nav-brand span { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent); color: #000; font-weight: 600;
+      padding: 8px 20px; border-radius: 8px; text-decoration: none;
+      font-size: 14px; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-hover); }
+
+    /* Hero */
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .hero-badge {
+      display: inline-block; background: var(--accent-dim);
+      color: var(--accent); padding: 6px 16px; border-radius: 999px;
+      font-size: 13px; font-weight: 600; margin-bottom: 24px;
+      border: 1px solid rgba(34,197,94,0.2);
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 56px); font-weight: 800;
+      line-height: 1.1; letter-spacing: -1.5px; color: var(--white); margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p { font-size: 18px; color: var(--text-muted); max-width: 560px; margin: 0 auto 36px; }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #000; font-weight: 700;
+      padding: 14px 32px; border-radius: 10px; text-decoration: none;
+      font-size: 16px; transition: all 0.2s;
+    }
+    .hero-cta:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .hero-sub { font-size: 13px; color: var(--text-muted); margin-top: 12px; }
+
+    /* Proof strip */
+    .proof {
+      display: flex; justify-content: center; gap: 48px; padding: 40px 0;
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .proof-item { text-align: center; }
+    .proof-num { font-size: 28px; font-weight: 800; color: var(--white); }
+    .proof-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+    /* Sections */
+    .section { padding: 80px 0; }
+    .section-label {
+      font-size: 13px; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;
+    }
+    .section h2 {
+      font-size: clamp(28px, 4vw, 40px); font-weight: 800;
+      letter-spacing: -1px; color: var(--white); margin-bottom: 24px; line-height: 1.15;
+    }
+    .section > .container > p {
+      font-size: 17px; color: var(--text-muted); max-width: 640px; margin-bottom: 40px;
+    }
+
+    /* Cards grid */
+    .card-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+    }
+    .card .icon { font-size: 24px; margin-bottom: 12px; }
+    .card h3 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+    /* Deliverables */
+    .deliverable {
+      position: relative;
+    }
+    .deliverable .num {
+      position: absolute; top: 20px; right: 20px;
+      font-size: 48px; font-weight: 900; color: var(--surface-2); line-height: 1;
+    }
+
+    /* Dashboard preview */
+    .demo-section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 40px; margin: 0 auto;
+    }
+    .demo-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+    }
+    .demo-header h3 { font-size: 15px; font-weight: 700; color: var(--white); }
+    .demo-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px;
+    }
+    .metric-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px;
+    }
+    .metric-label {
+      font-size: 12px; color: var(--text-muted); margin-bottom: 6px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .metric-value { font-size: 28px; font-weight: 800; color: var(--white); }
+    .metric-change { font-size: 12px; margin-top: 4px; }
+    .metric-change.up { color: var(--accent); }
+    .metric-change.down { color: #ef4444; }
+    .demo-chart {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 24px; height: 200px;
+      display: flex; align-items: flex-end; gap: 8px;
+    }
+    .chart-bar {
+      flex: 1; background: var(--accent); border-radius: 4px 4px 0 0;
+      opacity: 0.7; transition: opacity 0.2s; min-height: 8px;
+    }
+    .chart-bar:hover { opacity: 1; }
+
+    /* Process */
+    .process-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+    .process-step { text-align: center; padding: 32px 20px; }
+    .process-step .step-num {
+      width: 48px; height: 48px; background: var(--accent-dim);
+      border: 1px solid rgba(34,197,94,0.3); border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--accent); margin-bottom: 16px;
+    }
+    .process-step h3 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .process-step p { font-size: 14px; color: var(--text-muted); }
+
+    /* Pricing */
+    .pricing-card {
+      max-width: 480px; margin: 0 auto;
+      background: var(--surface); border: 2px solid var(--accent);
+      border-radius: 16px; padding: 40px; text-align: center; position: relative;
+    }
+    .pricing-card .badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--accent); color: #000;
+      padding: 4px 16px; border-radius: 999px;
+      font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .pricing-card h3 { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .pricing-card .price {
+      font-size: 48px; font-weight: 900; color: var(--white); margin: 16px 0 4px;
+    }
+    .pricing-card .price-note { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+    .pricing-card ul { list-style: none; text-align: left; margin-bottom: 28px; }
+    .pricing-card li {
+      padding: 8px 0; font-size: 14px; color: var(--text);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .pricing-card li::before { content: "\2713"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .pricing-cta {
+      display: block; width: 100%;
+      background: var(--accent); color: #000; font-weight: 700;
+      padding: 14px; border-radius: 10px; text-decoration: none;
+      font-size: 16px; transition: background 0.2s; border: none; cursor: pointer;
+    }
+    .pricing-cta:hover { background: var(--accent-hover); }
+    .pricing-fine { font-size: 12px; color: var(--text-muted); margin-top: 12px; }
+
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-item h3 { font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .faq-item p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+    /* CTA banner */
+    .cta-banner {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 60px 40px; text-align: center; margin: 60px 0;
+    }
+    .cta-banner h2 { font-size: 28px; font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .cta-banner p { font-size: 16px; color: var(--text-muted); margin-bottom: 28px; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; }
+    footer p { font-size: 13px; color: var(--text-muted); }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      .demo-grid { grid-template-columns: repeat(2, 1fr); }
+      .proof { gap: 24px; }
+      .demo-section { padding: 24px; }
+      .cta-banner { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">Metric<span>Setup</span></div>
+    <a href="#pricing" class="nav-cta">Get Started</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Delivery in 5 business days</div>
+    <h1>Know your SaaS numbers<br><em>before they matter</em></h1>
+    <p>A production-ready analytics dashboard, built on Metabase. Event tracking, conversion funnels, and monthly reports &mdash; configured for your actual product.</p>
+    <a href="#pricing" class="hero-cta">Book your dashboard &rarr;</a>
+    <div class="hero-sub">No contracts. 7-day money-back guarantee.</div>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="proof-item">
+    <div class="proof-num">5 days</div>
+    <div class="proof-label">Target delivery</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">Metabase</div>
+    <div class="proof-label">Open-source stack</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">$0</div>
+    <div class="proof-label">Monthly software cost</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num">Yours</div>
+    <div class="proof-label">100% your data</div>
+  </div>
+</div>
+
+<!-- Problem -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">The problem</div>
+    <h2>Your metrics are everywhere.<br>Your decisions are nowhere.</h2>
+    <p>You're pulling numbers from Stripe, Mixpanel, your database, and spreadsheets. By the time you assemble a report, it's already stale.</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon">&#128256;</div>
+        <h3>Data scattered across 5+ tools</h3>
+        <p>Stripe for revenue, Mixpanel for events, database for usage, Google Sheets for everything else. No single source of truth.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#9201;</div>
+        <h3>Weekly reports take 4+ hours</h3>
+        <p>Copy-pasting numbers into slides. Every week. The same format. The same data. The same wasted afternoon.</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#129300;</div>
+        <h3>You don't know what's working</h3>
+        <p>Which features drive retention? What's your actual activation rate? Where do trials drop off? You're guessing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What You Get -->
+<section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">What you get</div>
+    <h2>Everything you need.<br>Nothing you don't.</h2>
+    <p>Not a template. Not a course. A working dashboard configured for your SaaS, with the docs to keep it running.</p>
+    <div class="card-grid">
+      <div class="card deliverable">
+        <div class="num">01</div>
+        <h3>KPI Discovery Session</h3>
+        <p>A 60-minute call to map your funnel: signup, activation, trial, conversion, retention. We define what to measure before touching any tool.</p>
+      </div>
+      <div class="card deliverable">
+        <div class="num">02</div>
+        <h3>Event Tracking Dictionary</h3>
+        <p>A structured spec of every event to track, with naming conventions, properties, and implementation notes your dev team can follow.</p>
+      </div>
+      <div class="card deliverable">
+        <div class="num">03</div>
+        <h3>Metabase Dashboard</h3>
+        <p>A fully configured Metabase instance with 8+ connected charts: activation rate, MRR trends, churn signals, cohort retention, and conversion funnels.</p>
+      </div>
+      <div class="card deliverable">
+        <div class="num">04</div>
+        <h3>Data Quality Checklist</h3>
+        <p>A validation framework to ensure your events are clean, deduplicated, and consistent before they hit your dashboard.</p>
+      </div>
+      <div class="card deliverable">
+        <div class="num">05</div>
+        <h3>Monthly Report Template</h3>
+        <p>A plug-and-play report format with pre-built charts. Export to PDF or share a live link. Reporting drops to 30 minutes.</p>
+      </div>
+      <div class="card deliverable">
+        <div class="num">06</div>
+        <h3>Handover Documentation</h3>
+        <p>Full documentation of your dashboard setup: data sources, calculations, maintenance schedule, and troubleshooting guide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Dashboard preview</div>
+    <h2>This is what you'll see<br>every Monday morning.</h2>
+    <div class="demo-section">
+      <div class="demo-header">
+        <h3>SaaS Metrics Dashboard</h3>
+      </div>
+      <div class="demo-grid">
+        <div class="metric-card">
+          <div class="metric-label">MRR</div>
+          <div class="metric-value">$48.2K</div>
+          <div class="metric-change up">&uarr; 12.3% vs last month</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Activation Rate</div>
+          <div class="metric-value">34.7%</div>
+          <div class="metric-change up">&uarr; 2.1pp vs last month</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Trial &rarr; Paid</div>
+          <div class="metric-value">18.2%</div>
+          <div class="metric-change down">&darr; 0.8pp vs last month</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Monthly Churn</div>
+          <div class="metric-value">3.1%</div>
+          <div class="metric-change up">&darr; 0.4pp vs last month</div>
+        </div>
+      </div>
+      <div class="demo-chart" id="demoChart"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">How it works</div>
+    <h2>From kickoff to dashboard<br>in 5 business days.</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Book &amp; Pay</h3>
+        <p>Click the button, complete payment. You'll get a calendar link for the kickoff call within 1 hour.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Kickoff Call</h3>
+        <p>60-minute session to map your funnel, define events, and identify your data sources. We bring the questions.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Build</h3>
+        <p>We configure your Metabase instance, connect your data, and build the dashboard. Daily progress updates included.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Handover</h3>
+        <p>30-minute walkthrough, full documentation, and a maintenance guide. Your dashboard is yours to keep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-label">Pricing</div>
+    <h2>One price.<br>Everything included.</h2>
+    <div class="pricing-card">
+      <div class="badge">Most Popular</div>
+      <h3>SaaS Metrics Dashboard</h3>
+      <div class="price">$399</div>
+      <div class="price-note">One-time setup. No recurring fees.</div>
+      <ul>
+        <li>KPI discovery session (60 min)</li>
+        <li>Event tracking dictionary</li>
+        <li>Full Metabase dashboard (8+ charts)</li>
+        <li>Data quality checklist</li>
+        <li>Monthly report template</li>
+        <li>Handover documentation</li>
+        <li>7-day post-delivery support</li>
+      </ul>
+      <!-- STRIPE: Replace #stripe-placeholder with your Stripe Payment Link URL -->
+      <a href="#stripe-placeholder" class="pricing-cta">Get Your Dashboard &rarr;</a>
+      <div class="pricing-fine">Secure payment via Stripe. 7-day money-back guarantee.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2>Questions? Answers.</h2>
+    <div class="faq-item">
+      <h3>What stack do you use?</h3>
+      <p>Metabase (open-source) for the dashboard, connected to your existing database or API. No vendor lock-in. No monthly SaaS fees for the analytics tool itself.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to change my data pipeline?</h3>
+      <p>Not necessarily. We work with what you have. SQL database? We connect directly. Event-based (Segment, Mixpanel)? We'll set up the right connectors.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I don't have event tracking yet?</h3>
+      <p>That's fine &mdash; and common. The event tracking dictionary we deliver includes implementation guidance your dev team can follow. The dashboard works once events are flowing.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I self-host Metabase?</h3>
+      <p>Yes. Metabase is open-source. We'll help you deploy it on your own infrastructure (Docker, Railway, or your cloud provider). No recurring analytics costs.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I need changes after delivery?</h3>
+      <p>You get 7 days of free post-delivery support for tweaks. After that, monthly maintenance is available at $99/month.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a money-back guarantee?</h3>
+      <p>Yes. Full refund within 7 business days if deliverables are not met as described. No fine print.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<div class="container">
+  <div class="cta-banner">
+    <h2>Stop guessing.<br>Start measuring.</h2>
+    <p>Join SaaS founders who replaced spreadsheets with a dashboard they actually use.</p>
+    <a href="#pricing" class="hero-cta">Book your dashboard &rarr;</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 MetricSetup. Built for SaaS founders who want clarity, not complexity.</p>
+    <p style="margin-top:8px;"><a href="mailto:hello@metricsetup.io">hello@metricsetup.io</a></p>
+    <p style="margin-top:8px;font-size:12px;"><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+  // Chart bars
+  (function() {
+    var chart = document.getElementById('demoChart');
+    var heights = [65, 72, 58, 80, 75, 90, 85, 95, 88, 92, 78, 100];
+    heights.forEach(function(h) {
+      var bar = document.createElement('div');
+      bar.className = 'chart-bar';
+      bar.style.height = h + '%';
+      chart.appendChild(bar);
+    });
+  })();
+
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
