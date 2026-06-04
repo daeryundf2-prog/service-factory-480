@@ -59,7 +59,7 @@ Day 5: Report template, handover documentation, final review call.
 
 ## Refund Policy
 
-Full refund within 7 days if deliverables are not met as described in this document. No fine print. If we fail to deliver what we promised, you get your money back.
+Full refund within 7 business days if deliverables are not met as described in this document. No fine print. If we fail to deliver what we promised, you get your money back.
 
 ---
 
@@ -73,7 +73,7 @@ What we deliver is clarity. A working dashboard, clean data definitions, and the
 
 ## Support
 
-7 days of post-delivery support is included. If something breaks, if a chart looks wrong, or if you need help interpreting a metric -- email us. We respond within one business day during the support window.
+7 days of post-delivery support is included. If something breaks, if a chart looks wrong, or if you need help interpreting a metric -- email us at hello@metricsetup.io. We respond within one business day during the support window.
 
 ---
 
@@ -83,4 +83,4 @@ What we deliver is clarity. A working dashboard, clean data definitions, and the
 2. You receive a calendar link for the KPI Discovery Session within 2 hours.
 3. We start building your dashboard the same day.
 
-Questions before you start? Reach out and we will clarify anything before you commit.
+Questions before you start? Reach out at hello@metricsetup.io and we will clarify anything before you commit.

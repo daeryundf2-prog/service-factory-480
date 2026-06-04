@@ -16,6 +16,8 @@ Deploy to GitHub Pages and open your URL.
 | `delivery_checklist.md` | Internal delivery checklist |
 | `stripe-setup.md` | Stripe Payment Link setup guide |
 | `manifest.json` | Service metadata |
+| `privacy.html` | Privacy policy page |
+| `terms.html` | Terms of service page |
 
 ## Deploy to GitHub Pages
 

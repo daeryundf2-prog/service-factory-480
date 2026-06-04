@@ -111,7 +111,6 @@ Run through this checklist to confirm everything works:
 > **Tip:** Switch between test mode and live mode using the toggle in the Stripe Dashboard sidebar. Always test in test mode before accepting real payments.
 
 ---
----
 
 ## Step 6: Configure Taxes
 
